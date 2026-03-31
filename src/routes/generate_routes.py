@@ -9,7 +9,12 @@ from services.initalize import graphs
 router = APIRouter()
 
 
-@router.get("", response_model=GenerateResponse)
+@router.get("/gerar/kruskal")
 def get_routes():
-    usecase = GenerateUseCases(graphs.GRAPH1)  # You can choose which graph to use
+    usecase = GenerateUseCases()  # You can choose which graph to use
+    return "Em Desenvolvimento..."
+
+@router.get("/gerar/genetico")
+def get_routes():
+    usecase = GenerateUseCases()  # You can choose which graph to use
     return "Em Desenvolvimento..."

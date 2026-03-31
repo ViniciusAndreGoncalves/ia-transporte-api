@@ -59,6 +59,17 @@ class Kruskal:
         
         print(f"\nDistância Total para conectar todo o Brasil: {self.total_cost} km")
 
+    def generate(self):
+        return {
+            "lista_arestas": [
+                {
+                    'origem': aresta['origem'],
+                    'destino': aresta['destino'],
+                    'distancia': aresta['distancia']
+                } 
+            for aresta in self.mst]
+        }
+
         
 
 class AStar:
