@@ -1,20 +1,21 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, FastAPI
 
-from schemas.generate_schema import GenerateResponse
-from use_cases.generate_use_cases import GenerateUseCases
-from services.graphs import GraphService
+from src.use_cases.generate_use_cases import GenerateUseCases
+from src.services.graphs import GraphService
 
-from services.initalize import graphs
+from src.services.initalize import graphs
 
-router = APIRouter()
+router = APIRouter(prefix="/gerar", tags=["Geradores"], dependencies=[Depends(graphs)])
 
-
-@router.get("/gerar/kruskal")
+@router.get("/kruskal")
 def get_routes():
-    usecase = GenerateUseCases()  # You can choose which graph to use
-    return "Em Desenvolvimento..."
+    usecase = GenerateUseCases()
+    mst = usecase.generate_kruskal()
 
-@router.get("/gerar/genetico")
+    return mst
+
+
+@router.get("/genetico")
 def get_routes():
-    usecase = GenerateUseCases()  # You can choose which graph to use
+    usecase = GenerateUseCases()
     return "Em Desenvolvimento..."

@@ -1,4 +1,4 @@
-from services.graphs import GraphService
+from src.services.graphs import GraphService
 
 graphs = GraphService()
 graphs.load()

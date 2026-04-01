@@ -4,7 +4,7 @@ class GraphService:
     def __init__(self):
         self.data_graph = None
 
-    def load(self, filepath="/src/public/base_graph.json"):
+    def load(self, filepath="./src/public/base_graph.json"):
         try:
             with open(filepath, 'r', encoding='utf-8') as file:
                 self.data_graph = json.load(file)

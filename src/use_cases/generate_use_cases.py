@@ -1,10 +1,11 @@
-from services.algorithms import Kruskal, AStar, GeneticAlgorithm
-from services.initalize import graphs
+from src.services.algorithms import Kruskal, AStar, GeneticAlgorithm
+from src.services.initalize import graphs
 
+from src.services.graphs import GraphService
 
 class GenerateUseCases:
     def __init__(self):
-        self.graph_service = graphs
+        self.graph_service = GraphService()
 
     def generate_routes(self):
         # Implement the logic to generate routes using the algorithms
@@ -26,9 +27,14 @@ class GenerateUseCases:
         }
     
     def generate_kruskal(self):
-        kruskal = Kruskal(self.graph_service.graph)
+        self.graph_service.load()        
+        # kruskal = Kruskal(*self.graph_service.create_graph())
+        vertex, edges = self.graph_service.create_graph()
+        kruskal = Kruskal(vertex, edges)
+               
+        
         kruskal.run()
         mst = kruskal.generate()
-        self.graph_service.save(mst)
+        # self.graph_service.save(mst)
 
         return mst
