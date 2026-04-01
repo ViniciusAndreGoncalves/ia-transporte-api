@@ -31,10 +31,9 @@ class GenerateUseCases:
         # kruskal = Kruskal(*self.graph_service.create_graph())
         vertex, edges = self.graph_service.create_graph()
         kruskal = Kruskal(vertex, edges)
-               
         
         kruskal.run()
         mst = kruskal.generate()
-        # self.graph_service.save(mst)
+        self.graph_service.save(mst)
 
         return mst

@@ -1,0 +1,134 @@
+{
+    "lista_arestas": [
+        {
+            "origem": "PB",
+            "destino": "PE",
+            "distancia": 116
+        },
+        {
+            "origem": "PB",
+            "destino": "RN",
+            "distancia": 181
+        },
+        {
+            "origem": "DF",
+            "destino": "GO",
+            "distancia": 208
+        },
+        {
+            "origem": "AL",
+            "destino": "PE",
+            "distancia": 256
+        },
+        {
+            "origem": "AL",
+            "destino": "SE",
+            "distancia": 290
+        },
+        {
+            "origem": "PR",
+            "destino": "SC",
+            "distancia": 306
+        },
+        {
+            "origem": "BA",
+            "destino": "SE",
+            "distancia": 332
+        },
+        {
+            "origem": "PR",
+            "destino": "SP",
+            "distancia": 416
+        },
+        {
+            "origem": "MA",
+            "destino": "PI",
+            "distancia": 436
+        },
+        {
+            "origem": "RJ",
+            "destino": "SP",
+            "distancia": 436
+        },
+        {
+            "origem": "MG",
+            "destino": "RJ",
+            "distancia": 441
+        },
+        {
+            "origem": "RS",
+            "destino": "SC",
+            "distancia": 463
+        },
+        {
+            "origem": "AC",
+            "destino": "RO",
+            "distancia": 509
+        },
+        {
+            "origem": "ES",
+            "destino": "MG",
+            "distancia": 514
+        },
+        {
+            "origem": "CE",
+            "destino": "RN",
+            "distancia": 524
+        },
+        {
+            "origem": "AP",
+            "destino": "PA",
+            "distancia": 529
+        },
+        {
+            "origem": "CE",
+            "destino": "PI",
+            "distancia": 603
+        },
+        {
+            "origem": "MS",
+            "destino": "MT",
+            "distancia": 703
+        },
+        {
+            "origem": "DF",
+            "destino": "MG",
+            "distancia": 734
+        },
+        {
+            "origem": "AM",
+            "destino": "RR",
+            "distancia": 747
+        },
+        {
+            "origem": "MA",
+            "destino": "PA",
+            "distancia": 798
+        },
+        {
+            "origem": "GO",
+            "destino": "MS",
+            "distancia": 840
+        },
+        {
+            "origem": "GO",
+            "destino": "TO",
+            "distancia": 852
+        },
+        {
+            "origem": "AM",
+            "destino": "RO",
+            "distancia": 889
+        },
+        {
+            "origem": "PI",
+            "destino": "TO",
+            "distancia": 1107
+        },
+        {
+            "origem": "MT",
+            "destino": "RO",
+            "distancia": 1463
+        }
+    ]
+}
