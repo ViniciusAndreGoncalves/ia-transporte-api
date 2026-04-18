@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from src.services.graphs import GraphService
-from src.services.algorithms import Kruskal, AStar, GeneticAlgorithm
+from services.kruskal import Kruskal, AStar, GeneticAlgorithm
 from src.use_cases.generate_use_cases import GenerateUseCases
 from fastapi.middleware.cors import CORSMiddleware
 

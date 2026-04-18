@@ -1,0 +1,2544 @@
+{
+  "lista_adjacencias": {
+    "SE": {
+      "SE": 0,
+      "PA": 1641,
+      "MG": 1248,
+      "RR": 3022,
+      "DF": 1292,
+      "MS": 2155,
+      "MT": 2121,
+      "PR": 2061,
+      "SC": 2207,
+      "CE": 815,
+      "GO": 1461,
+      "PB": 486,
+      "AP": 1967,
+      "AL": 201,
+      "AM": 2682,
+      "RN": 604,
+      "TO": 1235,
+      "RS": 2685,
+      "RO": 2953,
+      "PE": 501,
+      "AC": 3365,
+      "RJ": 1855,
+      "BA": 277,
+      "MA": 1227,
+      "SP": 2187,
+      "PI": 905,
+      "ES": 1408
+    },
+    "PA": {
+      "SE": 1641,
+      "PA": 0,
+      "MG": 2111,
+      "RR": 1432,
+      "DF": 1592,
+      "MS": 2212,
+      "MT": 1778,
+      "PR": 2665,
+      "SC": 2904,
+      "CE": 1133,
+      "GO": 1693,
+      "PB": 1636,
+      "AP": 329,
+      "AL": 1679,
+      "AM": 1298,
+      "RN": 1553,
+      "TO": 965,
+      "RS": 3188,
+      "RO": 1887,
+      "PE": 1679,
+      "AC": 2334,
+      "RJ": 2450,
+      "BA": 1684,
+      "MA": 482,
+      "SP": 2463,
+      "PI": 749,
+      "ES": 2268
+    },
+    "MG": {
+      "SE": 1248,
+      "PA": 2111,
+      "MG": 0,
+      "RR": 3117,
+      "DF": 624,
+      "MS": 1118,
+      "MT": 1372,
+      "PR": 820,
+      "SC": 973,
+      "CE": 1893,
+      "GO": 666,
+      "PB": 1726,
+      "AP": 2349,
+      "AL": 1438,
+      "AM": 2556,
+      "RN": 1822,
+      "TO": 1176,
+      "RS": 1341,
+      "RO": 2480,
+      "PE": 1639,
+      "AC": 2789,
+      "RJ": 339,
+      "BA": 964,
+      "MA": 1924,
+      "SP": 489,
+      "PI": 1645,
+      "ES": 378
+    },
+    "RR": {
+      "SE": 3022,
+      "PA": 1432,
+      "MG": 3117,
+      "RR": 0,
+      "DF": 2496,
+      "MS": 2667,
+      "MT": 2107,
+      "PR": 3370,
+      "SC": 3620,
+      "CE": 2562,
+      "GO": 2503,
+      "PB": 3067,
+      "AP": 1110,
+      "AL": 3090,
+      "AM": 657,
+      "RN": 2987,
+      "TO": 1984,
+      "RS": 3831,
+      "RO": 1329,
+      "PE": 3107,
+      "AC": 1621,
+      "RJ": 3428,
+      "BA": 3008,
+      "MA": 1914,
+      "SP": 3300,
+      "PI": 2170,
+      "ES": 3388
+    },
+    "DF": {
+      "SE": 1292,
+      "PA": 1592,
+      "MG": 624,
+      "RR": 2496,
+      "DF": 0,
+      "MS": 878,
+      "MT": 873,
+      "PR": 1081,
+      "SC": 1314,
+      "CE": 1687,
+      "GO": 173,
+      "PB": 1716,
+      "AP": 1791,
+      "AL": 1484,
+      "AM": 1932,
+      "RN": 1775,
+      "TO": 620,
+      "RS": 1619,
+      "RO": 1900,
+      "PE": 1657,
+      "AC": 2246,
+      "RJ": 933,
+      "BA": 1060,
+      "MA": 1524,
+      "SP": 873,
+      "PI": 1313,
+      "ES": 947
+    },
+    "MS": {
+      "SE": 2155,
+      "PA": 2212,
+      "MG": 1118,
+      "RR": 2667,
+      "DF": 878,
+      "MS": 0,
+      "MT": 559,
+      "PR": 780,
+      "SC": 1007,
+      "CE": 2547,
+      "GO": 705,
+      "PB": 2593,
+      "AP": 2309,
+      "AL": 2385,
+      "AM": 2013,
+      "RN": 2648,
+      "TO": 1316,
+      "RS": 1119,
+      "RO": 1461,
+      "PE": 2530,
+      "AC": 1832,
+      "RJ": 1212,
+      "BA": 1920,
+      "MA": 2208,
+      "SP": 894,
+      "PI": 1966,
+      "ES": 1490
+    },
+    "MT": {
+      "SE": 2121,
+      "PA": 1778,
+      "MG": 1372,
+      "RR": 2107,
+      "DF": 873,
+      "MS": 559,
+      "MT": 0,
+      "PR": 1302,
+      "SC": 1543,
+      "CE": 2329,
+      "GO": 740,
+      "PB": 2495,
+      "AP": 1822,
+      "AL": 2330,
+      "AM": 1453,
+      "RN": 2524,
+      "TO": 1031,
+      "RS": 1679,
+      "RO": 1140,
+      "PE": 2452,
+      "AC": 1414,
+      "RJ": 1575,
+      "BA": 1915,
+      "MA": 1942,
+      "SP": 1326,
+      "PI": 1713,
+      "ES": 1746
+    },
+    "PR": {
+      "SE": 2061,
+      "PA": 2665,
+      "MG": 820,
+      "RR": 3370,
+      "DF": 1081,
+      "MS": 780,
+      "MT": 1302,
+      "PR": 0,
+      "SC": 251,
+      "CE": 2670,
+      "GO": 972,
+      "PB": 2545,
+      "AP": 2836,
+      "AL": 2265,
+      "AM": 2734,
+      "RN": 2645,
+      "TO": 1704,
+      "RS": 546,
+      "RO": 2412,
+      "PE": 2459,
+      "AC": 2681,
+      "RJ": 675,
+      "BA": 1784,
+      "MA": 2469,
+      "SP": 338,
+      "PI": 2230,
+      "ES": 1076
+    },
+    "SC": {
+      "SE": 2207,
+      "PA": 2904,
+      "MG": 973,
+      "RR": 3620,
+      "DF": 1314,
+      "MS": 1007,
+      "MT": 1543,
+      "PR": 251,
+      "SC": 0,
+      "CE": 2857,
+      "GO": 1215,
+      "PB": 2693,
+      "AP": 3082,
+      "AL": 2415,
+      "AM": 2981,
+      "RN": 2802,
+      "TO": 1935,
+      "RS": 376,
+      "RO": 2631,
+      "PE": 2603,
+      "AC": 2865,
+      "RJ": 748,
+      "BA": 1930,
+      "MA": 2685,
+      "SP": 489,
+      "PI": 2428,
+      "ES": 1161
+    },
+    "CE": {
+      "SE": 815,
+      "PA": 1133,
+      "MG": 1893,
+      "RR": 2562,
+      "DF": 1687,
+      "MS": 2547,
+      "MT": 2329,
+      "PR": 2670,
+      "SC": 2857,
+      "CE": 0,
+      "GO": 1854,
+      "PB": 555,
+      "AP": 1451,
+      "AL": 732,
+      "AM": 2383,
+      "RN": 435,
+      "TO": 1297,
+      "RS": 3193,
+      "RO": 2862,
+      "PE": 629,
+      "AC": 3307,
+      "RJ": 2190,
+      "BA": 1028,
+      "MA": 656,
+      "SP": 2368,
+      "PI": 499,
+      "ES": 1855
+    },
+    "GO": {
+      "SE": 1461,
+      "PA": 1693,
+      "MG": 666,
+      "RR": 2503,
+      "DF": 173,
+      "MS": 705,
+      "MT": 740,
+      "PR": 972,
+      "SC": 1215,
+      "CE": 1854,
+      "GO": 0,
+      "PB": 1889,
+      "AP": 1868,
+      "AL": 1658,
+      "AM": 1924,
+      "RN": 1952,
+      "TO": 724,
+      "RS": 1497,
+      "RO": 1813,
+      "PE": 1829,
+      "AC": 2124,
+      "RJ": 936,
+      "BA": 1225,
+      "MA": 1652,
+      "SP": 810,
+      "PI": 1434,
+      "ES": 1041
+    },
+    "PB": {
+      "SE": 486,
+      "PA": 1636,
+      "MG": 1726,
+      "RR": 3067,
+      "DF": 1716,
+      "MS": 2593,
+      "MT": 2495,
+      "PR": 2545,
+      "SC": 2693,
+      "CE": 555,
+      "GO": 1889,
+      "PB": 0,
+      "AP": 1966,
+      "AL": 299,
+      "AM": 2829,
+      "RN": 152,
+      "TO": 1519,
+      "RS": 3166,
+      "RO": 3206,
+      "PE": 104,
+      "AC": 3638,
+      "RJ": 1968,
+      "BA": 763,
+      "MA": 1166,
+      "SP": 2216,
+      "PI": 909,
+      "ES": 1581
+    },
+    "AP": {
+      "SE": 1967,
+      "PA": 329,
+      "MG": 2349,
+      "RR": 1110,
+      "DF": 1791,
+      "MS": 2309,
+      "MT": 1822,
+      "PR": 2836,
+      "SC": 3082,
+      "CE": 1451,
+      "GO": 1868,
+      "PB": 1966,
+      "AP": 0,
+      "AL": 1998,
+      "AM": 1059,
+      "RN": 1876,
+      "TO": 1170,
+      "RS": 3341,
+      "RO": 1725,
+      "PE": 2007,
+      "AC": 2160,
+      "RJ": 2685,
+      "BA": 2001,
+      "MA": 803,
+      "SP": 2664,
+      "PI": 1078,
+      "ES": 2537
+    },
+    "AL": {
+      "SE": 201,
+      "PA": 1679,
+      "MG": 1438,
+      "RR": 3090,
+      "DF": 1484,
+      "MS": 2385,
+      "MT": 2330,
+      "PR": 2265,
+      "SC": 2415,
+      "CE": 732,
+      "GO": 1658,
+      "PB": 299,
+      "AP": 1998,
+      "AL": 0,
+      "AM": 2785,
+      "RN": 434,
+      "TO": 1382,
+      "RS": 2882,
+      "RO": 3096,
+      "PE": 202,
+      "AC": 3516,
+      "RJ": 1671,
+      "BA": 474,
+      "MA": 1232,
+      "SP": 1928,
+      "PI": 929,
+      "ES": 1174
+    },
+    "AM": {
+      "SE": 2682,
+      "PA": 1298,
+      "MG": 2556,
+      "RR": 657,
+      "DF": 1932,
+      "MS": 2013,
+      "MT": 1453,
+      "PR": 2734,
+      "SC": 2981,
+      "CE": 2383,
+      "GO": 1924,
+      "PB": 2829,
+      "AP": 1059,
+      "AL": 2785,
+      "AM": 0,
+      "RN": 2773,
+      "TO": 1514,
+      "RS": 3132,
+      "RO": 757,
+      "PE": 2843,
+      "AC": 1145,
+      "RJ": 2849,
+      "BA": 2605,
+      "MA": 1752,
+      "SP": 2689,
+      "PI": 1927,
+      "ES": 2866
+    },
+    "RN": {
+      "SE": 604,
+      "PA": 1553,
+      "MG": 1822,
+      "RR": 2987,
+      "DF": 1775,
+      "MS": 2648,
+      "MT": 2524,
+      "PR": 2645,
+      "SC": 2802,
+      "CE": 435,
+      "GO": 1952,
+      "PB": 152,
+      "AP": 1876,
+      "AL": 434,
+      "AM": 2773,
+      "RN": 0,
+      "TO": 1524,
+      "RS": 3169,
+      "RO": 3184,
+      "PE": 253,
+      "AC": 3621,
+      "RJ": 2085,
+      "BA": 875,
+      "MA": 1073,
+      "SP": 2320,
+      "PI": 846,
+      "ES": 1693
+    },
+    "TO": {
+      "SE": 1235,
+      "PA": 965,
+      "MG": 1176,
+      "RR": 1984,
+      "DF": 620,
+      "MS": 1316,
+      "MT": 1031,
+      "PR": 1704,
+      "SC": 1935,
+      "CE": 1297,
+      "GO": 724,
+      "PB": 1519,
+      "AP": 1170,
+      "AL": 1382,
+      "AM": 1514,
+      "RN": 1524,
+      "TO": 0,
+      "RS": 2270,
+      "RO": 1717,
+      "PE": 1498,
+      "AC": 2134,
+      "RJ": 1505,
+      "BA": 1114,
+      "MA": 956,
+      "SP": 1493,
+      "PI": 829,
+      "ES": 1411
+    },
+    "RS": {
+      "SE": 2685,
+      "PA": 3188,
+      "MG": 1341,
+      "RR": 3831,
+      "DF": 1619,
+      "MS": 1119,
+      "MT": 1679,
+      "PR": 546,
+      "SC": 376,
+      "CE": 3193,
+      "GO": 1497,
+      "PB": 3166,
+      "AP": 3341,
+      "AL": 2882,
+      "AM": 3132,
+      "RN": 3169,
+      "TO": 2270,
+      "RS": 0,
+      "RO": 2706,
+      "PE": 2977,
+      "AC": 2814,
+      "RJ": 1123,
+      "BA": 2303,
+      "MA": 2992,
+      "SP": 852,
+      "PI": 2765,
+      "ES": 1536
+    },
+    "RO": {
+      "SE": 2953,
+      "PA": 1887,
+      "MG": 2480,
+      "RR": 1329,
+      "DF": 1900,
+      "MS": 1461,
+      "MT": 1140,
+      "PR": 2412,
+      "SC": 2631,
+      "CE": 2862,
+      "GO": 1813,
+      "PB": 3206,
+      "AP": 1725,
+      "AL": 3096,
+      "AM": 757,
+      "RN": 3184,
+      "TO": 1717,
+      "RS": 2706,
+      "RO": 0,
+      "PE": 3198,
+      "AC": 449,
+      "RJ": 2707,
+      "BA": 2814,
+      "MA": 2277,
+      "SP": 2463,
+      "PI": 2366,
+      "ES": 2839
+    },
+    "PE": {
+      "SE": 501,
+      "PA": 1679,
+      "MG": 1639,
+      "RR": 3107,
+      "DF": 1657,
+      "MS": 2530,
+      "MT": 2452,
+      "PR": 2459,
+      "SC": 2603,
+      "CE": 629,
+      "GO": 1829,
+      "PB": 104,
+      "AP": 2007,
+      "AL": 202,
+      "AM": 2843,
+      "RN": 253,
+      "TO": 1498,
+      "RS": 2977,
+      "RO": 3198,
+      "PE": 0,
+      "AC": 3626,
+      "RJ": 1874,
+      "BA": 675,
+      "MA": 1211,
+      "SP": 2128,
+      "PI": 937,
+      "ES": 1483
+    },
+    "AC": {
+      "SE": 3365,
+      "PA": 2334,
+      "MG": 2789,
+      "RR": 1621,
+      "DF": 2246,
+      "MS": 1832,
+      "MT": 1414,
+      "PR": 2681,
+      "SC": 2865,
+      "CE": 3307,
+      "GO": 2124,
+      "PB": 3638,
+      "AP": 2160,
+      "AL": 3516,
+      "AM": 1145,
+      "RN": 3621,
+      "TO": 2134,
+      "RS": 2814,
+      "RO": 449,
+      "PE": 3626,
+      "AC": 0,
+      "RJ": 2982,
+      "BA": 3212,
+      "MA": 2726,
+      "SP": 2704,
+      "PI": 2810,
+      "ES": 3160
+    },
+    "RJ": {
+      "SE": 1855,
+      "PA": 2450,
+      "MG": 339,
+      "RR": 3428,
+      "DF": 933,
+      "MS": 1212,
+      "MT": 1575,
+      "PR": 675,
+      "SC": 748,
+      "CE": 2190,
+      "GO": 936,
+      "PB": 1968,
+      "AP": 2685,
+      "AL": 1671,
+      "AM": 2849,
+      "RN": 2085,
+      "TO": 1505,
+      "RS": 1123,
+      "RO": 2707,
+      "PE": 1874,
+      "AC": 2982,
+      "RJ": 0,
+      "BA": 1209,
+      "MA": 2265,
+      "SP": 357,
+      "PI": 1979,
+      "ES": 412
+    },
+    "BA": {
+      "SE": 277,
+      "PA": 1684,
+      "MG": 964,
+      "RR": 3008,
+      "DF": 1060,
+      "MS": 1920,
+      "MT": 1915,
+      "PR": 1784,
+      "SC": 1930,
+      "CE": 1028,
+      "GO": 1225,
+      "PB": 763,
+      "AP": 2001,
+      "AL": 474,
+      "AM": 2605,
+      "RN": 875,
+      "TO": 1114,
+      "RS": 2303,
+      "RO": 2814,
+      "PE": 675,
+      "AC": 3212,
+      "RJ": 1209,
+      "BA": 0,
+      "MA": 1319,
+      "SP": 1453,
+      "PI": 991,
+      "ES": 839
+    },
+    "MA": {
+      "SE": 1227,
+      "PA": 482,
+      "MG": 1924,
+      "RR": 1914,
+      "DF": 1524,
+      "MS": 2208,
+      "MT": 1942,
+      "PR": 2469,
+      "SC": 2685,
+      "CE": 656,
+      "GO": 1652,
+      "PB": 1166,
+      "AP": 803,
+      "AL": 1232,
+      "AM": 1752,
+      "RN": 1073,
+      "TO": 956,
+      "RS": 2992,
+      "RO": 2277,
+      "PE": 1211,
+      "AC": 2726,
+      "RJ": 2265,
+      "BA": 1319,
+      "MA": 0,
+      "SP": 2348,
+      "PI": 328,
+      "ES": 2015
+    },
+    "SP": {
+      "SE": 2187,
+      "PA": 2463,
+      "MG": 489,
+      "RR": 3300,
+      "DF": 873,
+      "MS": 894,
+      "MT": 1326,
+      "PR": 338,
+      "SC": 489,
+      "CE": 2368,
+      "GO": 810,
+      "PB": 2216,
+      "AP": 2664,
+      "AL": 1928,
+      "AM": 2689,
+      "RN": 2320,
+      "TO": 1493,
+      "RS": 852,
+      "RO": 2463,
+      "PE": 2128,
+      "AC": 2704,
+      "RJ": 357,
+      "BA": 1453,
+      "MA": 2348,
+      "SP": 0,
+      "PI": 2091,
+      "ES": 741
+    },
+    "PI": {
+      "SE": 905,
+      "PA": 749,
+      "MG": 1645,
+      "RR": 2170,
+      "DF": 1313,
+      "MS": 1966,
+      "MT": 1713,
+      "PR": 2230,
+      "SC": 2428,
+      "CE": 499,
+      "GO": 1434,
+      "PB": 909,
+      "AP": 1078,
+      "AL": 929,
+      "AM": 1927,
+      "RN": 846,
+      "TO": 829,
+      "RS": 2765,
+      "RO": 2366,
+      "PE": 937,
+      "AC": 2810,
+      "RJ": 1979,
+      "BA": 991,
+      "MA": 328,
+      "SP": 2091,
+      "PI": 0,
+      "ES": 1729
+    },
+    "ES": {
+      "SE": 1408,
+      "PA": 2268,
+      "MG": 378,
+      "RR": 3388,
+      "DF": 947,
+      "MS": 1490,
+      "MT": 1746,
+      "PR": 1076,
+      "SC": 1161,
+      "CE": 1855,
+      "GO": 1041,
+      "PB": 1581,
+      "AP": 2537,
+      "AL": 1174,
+      "AM": 2866,
+      "RN": 1693,
+      "TO": 1411,
+      "RS": 1536,
+      "RO": 2839,
+      "PE": 1483,
+      "AC": 3160,
+      "RJ": 412,
+      "BA": 839,
+      "MA": 2015,
+      "SP": 741,
+      "PI": 1729,
+      "ES": 0
+    }
+  },
+  "lista_arestas": [
+    {
+      "origem": "SE",
+      "destino": "PA",
+      "distancia": 1641
+    },
+    {
+      "origem": "SE",
+      "destino": "MG",
+      "distancia": 1248
+    },
+    {
+      "origem": "SE",
+      "destino": "RR",
+      "distancia": 3022
+    },
+    {
+      "origem": "SE",
+      "destino": "DF",
+      "distancia": 1292
+    },
+    {
+      "origem": "SE",
+      "destino": "MS",
+      "distancia": 2155
+    },
+    {
+      "origem": "SE",
+      "destino": "MT",
+      "distancia": 2121
+    },
+    {
+      "origem": "SE",
+      "destino": "PR",
+      "distancia": 2061
+    },
+    {
+      "origem": "SE",
+      "destino": "SC",
+      "distancia": 2207
+    },
+    {
+      "origem": "SE",
+      "destino": "CE",
+      "distancia": 815
+    },
+    {
+      "origem": "SE",
+      "destino": "GO",
+      "distancia": 1461
+    },
+    {
+      "origem": "SE",
+      "destino": "PB",
+      "distancia": 486
+    },
+    {
+      "origem": "SE",
+      "destino": "AP",
+      "distancia": 1967
+    },
+    {
+      "origem": "SE",
+      "destino": "AL",
+      "distancia": 201
+    },
+    {
+      "origem": "SE",
+      "destino": "AM",
+      "distancia": 2682
+    },
+    {
+      "origem": "SE",
+      "destino": "RN",
+      "distancia": 604
+    },
+    {
+      "origem": "SE",
+      "destino": "TO",
+      "distancia": 1235
+    },
+    {
+      "origem": "SE",
+      "destino": "RS",
+      "distancia": 2685
+    },
+    {
+      "origem": "SE",
+      "destino": "RO",
+      "distancia": 2953
+    },
+    {
+      "origem": "SE",
+      "destino": "PE",
+      "distancia": 501
+    },
+    {
+      "origem": "SE",
+      "destino": "AC",
+      "distancia": 3365
+    },
+    {
+      "origem": "SE",
+      "destino": "RJ",
+      "distancia": 1855
+    },
+    {
+      "origem": "SE",
+      "destino": "BA",
+      "distancia": 277
+    },
+    {
+      "origem": "SE",
+      "destino": "MA",
+      "distancia": 1227
+    },
+    {
+      "origem": "SE",
+      "destino": "SP",
+      "distancia": 2187
+    },
+    {
+      "origem": "SE",
+      "destino": "PI",
+      "distancia": 905
+    },
+    {
+      "origem": "SE",
+      "destino": "ES",
+      "distancia": 1408
+    },
+    {
+      "origem": "PA",
+      "destino": "RR",
+      "distancia": 1432
+    },
+    {
+      "origem": "PA",
+      "destino": "DF",
+      "distancia": 1592
+    },
+    {
+      "origem": "PA",
+      "destino": "MS",
+      "distancia": 2212
+    },
+    {
+      "origem": "PA",
+      "destino": "MT",
+      "distancia": 1778
+    },
+    {
+      "origem": "PA",
+      "destino": "PR",
+      "distancia": 2665
+    },
+    {
+      "origem": "PA",
+      "destino": "SC",
+      "distancia": 2904
+    },
+    {
+      "origem": "PA",
+      "destino": "CE",
+      "distancia": 1133
+    },
+    {
+      "origem": "PA",
+      "destino": "GO",
+      "distancia": 1693
+    },
+    {
+      "origem": "PA",
+      "destino": "PB",
+      "distancia": 1636
+    },
+    {
+      "origem": "PA",
+      "destino": "AP",
+      "distancia": 329
+    },
+    {
+      "origem": "PA",
+      "destino": "AL",
+      "distancia": 1679
+    },
+    {
+      "origem": "PA",
+      "destino": "AM",
+      "distancia": 1298
+    },
+    {
+      "origem": "PA",
+      "destino": "RN",
+      "distancia": 1553
+    },
+    {
+      "origem": "PA",
+      "destino": "TO",
+      "distancia": 965
+    },
+    {
+      "origem": "PA",
+      "destino": "RS",
+      "distancia": 3188
+    },
+    {
+      "origem": "PA",
+      "destino": "RO",
+      "distancia": 1887
+    },
+    {
+      "origem": "PA",
+      "destino": "PE",
+      "distancia": 1679
+    },
+    {
+      "origem": "PA",
+      "destino": "AC",
+      "distancia": 2334
+    },
+    {
+      "origem": "PA",
+      "destino": "RJ",
+      "distancia": 2450
+    },
+    {
+      "origem": "PA",
+      "destino": "BA",
+      "distancia": 1684
+    },
+    {
+      "origem": "PA",
+      "destino": "MA",
+      "distancia": 482
+    },
+    {
+      "origem": "PA",
+      "destino": "SP",
+      "distancia": 2463
+    },
+    {
+      "origem": "PA",
+      "destino": "PI",
+      "distancia": 749
+    },
+    {
+      "origem": "PA",
+      "destino": "ES",
+      "distancia": 2268
+    },
+    {
+      "origem": "MG",
+      "destino": "PA",
+      "distancia": 2111
+    },
+    {
+      "origem": "MG",
+      "destino": "RR",
+      "distancia": 3117
+    },
+    {
+      "origem": "MG",
+      "destino": "DF",
+      "distancia": 624
+    },
+    {
+      "origem": "MG",
+      "destino": "MS",
+      "distancia": 1118
+    },
+    {
+      "origem": "MG",
+      "destino": "MT",
+      "distancia": 1372
+    },
+    {
+      "origem": "MG",
+      "destino": "PR",
+      "distancia": 820
+    },
+    {
+      "origem": "MG",
+      "destino": "SC",
+      "distancia": 973
+    },
+    {
+      "origem": "MG",
+      "destino": "CE",
+      "distancia": 1893
+    },
+    {
+      "origem": "MG",
+      "destino": "GO",
+      "distancia": 666
+    },
+    {
+      "origem": "MG",
+      "destino": "PB",
+      "distancia": 1726
+    },
+    {
+      "origem": "MG",
+      "destino": "AP",
+      "distancia": 2349
+    },
+    {
+      "origem": "MG",
+      "destino": "AL",
+      "distancia": 1438
+    },
+    {
+      "origem": "MG",
+      "destino": "AM",
+      "distancia": 2556
+    },
+    {
+      "origem": "MG",
+      "destino": "RN",
+      "distancia": 1822
+    },
+    {
+      "origem": "MG",
+      "destino": "TO",
+      "distancia": 1176
+    },
+    {
+      "origem": "MG",
+      "destino": "RS",
+      "distancia": 1341
+    },
+    {
+      "origem": "MG",
+      "destino": "RO",
+      "distancia": 2480
+    },
+    {
+      "origem": "MG",
+      "destino": "PE",
+      "distancia": 1639
+    },
+    {
+      "origem": "MG",
+      "destino": "AC",
+      "distancia": 2789
+    },
+    {
+      "origem": "MG",
+      "destino": "RJ",
+      "distancia": 339
+    },
+    {
+      "origem": "MG",
+      "destino": "BA",
+      "distancia": 964
+    },
+    {
+      "origem": "MG",
+      "destino": "MA",
+      "distancia": 1924
+    },
+    {
+      "origem": "MG",
+      "destino": "SP",
+      "distancia": 489
+    },
+    {
+      "origem": "MG",
+      "destino": "PI",
+      "distancia": 1645
+    },
+    {
+      "origem": "MG",
+      "destino": "ES",
+      "distancia": 378
+    },
+    {
+      "origem": "RR",
+      "destino": "DF",
+      "distancia": 2496
+    },
+    {
+      "origem": "RR",
+      "destino": "MS",
+      "distancia": 2667
+    },
+    {
+      "origem": "RR",
+      "destino": "MT",
+      "distancia": 2107
+    },
+    {
+      "origem": "RR",
+      "destino": "PR",
+      "distancia": 3370
+    },
+    {
+      "origem": "RR",
+      "destino": "SC",
+      "distancia": 3620
+    },
+    {
+      "origem": "RR",
+      "destino": "CE",
+      "distancia": 2562
+    },
+    {
+      "origem": "RR",
+      "destino": "GO",
+      "distancia": 2503
+    },
+    {
+      "origem": "RR",
+      "destino": "PB",
+      "distancia": 3067
+    },
+    {
+      "origem": "RR",
+      "destino": "AP",
+      "distancia": 1110
+    },
+    {
+      "origem": "RR",
+      "destino": "AL",
+      "distancia": 3090
+    },
+    {
+      "origem": "RR",
+      "destino": "AM",
+      "distancia": 657
+    },
+    {
+      "origem": "RR",
+      "destino": "RN",
+      "distancia": 2987
+    },
+    {
+      "origem": "RR",
+      "destino": "TO",
+      "distancia": 1984
+    },
+    {
+      "origem": "RR",
+      "destino": "RS",
+      "distancia": 3831
+    },
+    {
+      "origem": "RR",
+      "destino": "RO",
+      "distancia": 1329
+    },
+    {
+      "origem": "RR",
+      "destino": "PE",
+      "distancia": 3107
+    },
+    {
+      "origem": "RR",
+      "destino": "AC",
+      "distancia": 1621
+    },
+    {
+      "origem": "RR",
+      "destino": "RJ",
+      "distancia": 3428
+    },
+    {
+      "origem": "RR",
+      "destino": "BA",
+      "distancia": 3008
+    },
+    {
+      "origem": "RR",
+      "destino": "MA",
+      "distancia": 1914
+    },
+    {
+      "origem": "RR",
+      "destino": "SP",
+      "distancia": 3300
+    },
+    {
+      "origem": "RR",
+      "destino": "PI",
+      "distancia": 2170
+    },
+    {
+      "origem": "RR",
+      "destino": "ES",
+      "distancia": 3388
+    },
+    {
+      "origem": "DF",
+      "destino": "MS",
+      "distancia": 878
+    },
+    {
+      "origem": "DF",
+      "destino": "MT",
+      "distancia": 873
+    },
+    {
+      "origem": "DF",
+      "destino": "PR",
+      "distancia": 1081
+    },
+    {
+      "origem": "DF",
+      "destino": "SC",
+      "distancia": 1314
+    },
+    {
+      "origem": "DF",
+      "destino": "CE",
+      "distancia": 1687
+    },
+    {
+      "origem": "DF",
+      "destino": "GO",
+      "distancia": 173
+    },
+    {
+      "origem": "DF",
+      "destino": "PB",
+      "distancia": 1716
+    },
+    {
+      "origem": "DF",
+      "destino": "AP",
+      "distancia": 1791
+    },
+    {
+      "origem": "DF",
+      "destino": "AL",
+      "distancia": 1484
+    },
+    {
+      "origem": "DF",
+      "destino": "AM",
+      "distancia": 1932
+    },
+    {
+      "origem": "DF",
+      "destino": "RN",
+      "distancia": 1775
+    },
+    {
+      "origem": "DF",
+      "destino": "TO",
+      "distancia": 620
+    },
+    {
+      "origem": "DF",
+      "destino": "RS",
+      "distancia": 1619
+    },
+    {
+      "origem": "DF",
+      "destino": "RO",
+      "distancia": 1900
+    },
+    {
+      "origem": "DF",
+      "destino": "PE",
+      "distancia": 1657
+    },
+    {
+      "origem": "DF",
+      "destino": "AC",
+      "distancia": 2246
+    },
+    {
+      "origem": "DF",
+      "destino": "RJ",
+      "distancia": 933
+    },
+    {
+      "origem": "DF",
+      "destino": "BA",
+      "distancia": 1060
+    },
+    {
+      "origem": "DF",
+      "destino": "MA",
+      "distancia": 1524
+    },
+    {
+      "origem": "DF",
+      "destino": "SP",
+      "distancia": 873
+    },
+    {
+      "origem": "DF",
+      "destino": "PI",
+      "distancia": 1313
+    },
+    {
+      "origem": "DF",
+      "destino": "ES",
+      "distancia": 947
+    },
+    {
+      "origem": "MS",
+      "destino": "MT",
+      "distancia": 559
+    },
+    {
+      "origem": "MS",
+      "destino": "PR",
+      "distancia": 780
+    },
+    {
+      "origem": "MS",
+      "destino": "SC",
+      "distancia": 1007
+    },
+    {
+      "origem": "MS",
+      "destino": "CE",
+      "distancia": 2547
+    },
+    {
+      "origem": "MS",
+      "destino": "GO",
+      "distancia": 705
+    },
+    {
+      "origem": "MS",
+      "destino": "PB",
+      "distancia": 2593
+    },
+    {
+      "origem": "MS",
+      "destino": "AP",
+      "distancia": 2309
+    },
+    {
+      "origem": "MS",
+      "destino": "AL",
+      "distancia": 2385
+    },
+    {
+      "origem": "MS",
+      "destino": "AM",
+      "distancia": 2013
+    },
+    {
+      "origem": "MS",
+      "destino": "RN",
+      "distancia": 2648
+    },
+    {
+      "origem": "MS",
+      "destino": "TO",
+      "distancia": 1316
+    },
+    {
+      "origem": "MS",
+      "destino": "RS",
+      "distancia": 1119
+    },
+    {
+      "origem": "MS",
+      "destino": "RO",
+      "distancia": 1461
+    },
+    {
+      "origem": "MS",
+      "destino": "PE",
+      "distancia": 2530
+    },
+    {
+      "origem": "MS",
+      "destino": "AC",
+      "distancia": 1832
+    },
+    {
+      "origem": "MS",
+      "destino": "RJ",
+      "distancia": 1212
+    },
+    {
+      "origem": "MS",
+      "destino": "BA",
+      "distancia": 1920
+    },
+    {
+      "origem": "MS",
+      "destino": "MA",
+      "distancia": 2208
+    },
+    {
+      "origem": "MS",
+      "destino": "SP",
+      "distancia": 894
+    },
+    {
+      "origem": "MS",
+      "destino": "PI",
+      "distancia": 1966
+    },
+    {
+      "origem": "MS",
+      "destino": "ES",
+      "distancia": 1490
+    },
+    {
+      "origem": "MT",
+      "destino": "PR",
+      "distancia": 1302
+    },
+    {
+      "origem": "MT",
+      "destino": "SC",
+      "distancia": 1543
+    },
+    {
+      "origem": "MT",
+      "destino": "CE",
+      "distancia": 2329
+    },
+    {
+      "origem": "MT",
+      "destino": "GO",
+      "distancia": 740
+    },
+    {
+      "origem": "MT",
+      "destino": "PB",
+      "distancia": 2495
+    },
+    {
+      "origem": "MT",
+      "destino": "AP",
+      "distancia": 1822
+    },
+    {
+      "origem": "MT",
+      "destino": "AL",
+      "distancia": 2330
+    },
+    {
+      "origem": "MT",
+      "destino": "AM",
+      "distancia": 1453
+    },
+    {
+      "origem": "MT",
+      "destino": "RN",
+      "distancia": 2524
+    },
+    {
+      "origem": "MT",
+      "destino": "TO",
+      "distancia": 1031
+    },
+    {
+      "origem": "MT",
+      "destino": "RS",
+      "distancia": 1679
+    },
+    {
+      "origem": "MT",
+      "destino": "RO",
+      "distancia": 1140
+    },
+    {
+      "origem": "MT",
+      "destino": "PE",
+      "distancia": 2452
+    },
+    {
+      "origem": "MT",
+      "destino": "AC",
+      "distancia": 1414
+    },
+    {
+      "origem": "MT",
+      "destino": "RJ",
+      "distancia": 1575
+    },
+    {
+      "origem": "MT",
+      "destino": "BA",
+      "distancia": 1915
+    },
+    {
+      "origem": "MT",
+      "destino": "MA",
+      "distancia": 1942
+    },
+    {
+      "origem": "MT",
+      "destino": "SP",
+      "distancia": 1326
+    },
+    {
+      "origem": "MT",
+      "destino": "PI",
+      "distancia": 1713
+    },
+    {
+      "origem": "MT",
+      "destino": "ES",
+      "distancia": 1746
+    },
+    {
+      "origem": "PR",
+      "destino": "SC",
+      "distancia": 251
+    },
+    {
+      "origem": "PR",
+      "destino": "CE",
+      "distancia": 2670
+    },
+    {
+      "origem": "PR",
+      "destino": "GO",
+      "distancia": 972
+    },
+    {
+      "origem": "PR",
+      "destino": "PB",
+      "distancia": 2545
+    },
+    {
+      "origem": "PR",
+      "destino": "AP",
+      "distancia": 2836
+    },
+    {
+      "origem": "PR",
+      "destino": "AL",
+      "distancia": 2265
+    },
+    {
+      "origem": "PR",
+      "destino": "AM",
+      "distancia": 2734
+    },
+    {
+      "origem": "PR",
+      "destino": "RN",
+      "distancia": 2645
+    },
+    {
+      "origem": "PR",
+      "destino": "TO",
+      "distancia": 1704
+    },
+    {
+      "origem": "PR",
+      "destino": "RS",
+      "distancia": 546
+    },
+    {
+      "origem": "PR",
+      "destino": "RO",
+      "distancia": 2412
+    },
+    {
+      "origem": "PR",
+      "destino": "PE",
+      "distancia": 2459
+    },
+    {
+      "origem": "PR",
+      "destino": "AC",
+      "distancia": 2681
+    },
+    {
+      "origem": "PR",
+      "destino": "RJ",
+      "distancia": 675
+    },
+    {
+      "origem": "PR",
+      "destino": "BA",
+      "distancia": 1784
+    },
+    {
+      "origem": "PR",
+      "destino": "MA",
+      "distancia": 2469
+    },
+    {
+      "origem": "PR",
+      "destino": "SP",
+      "distancia": 338
+    },
+    {
+      "origem": "PR",
+      "destino": "PI",
+      "distancia": 2230
+    },
+    {
+      "origem": "PR",
+      "destino": "ES",
+      "distancia": 1076
+    },
+    {
+      "origem": "SC",
+      "destino": "CE",
+      "distancia": 2857
+    },
+    {
+      "origem": "SC",
+      "destino": "GO",
+      "distancia": 1215
+    },
+    {
+      "origem": "SC",
+      "destino": "PB",
+      "distancia": 2693
+    },
+    {
+      "origem": "SC",
+      "destino": "AP",
+      "distancia": 3082
+    },
+    {
+      "origem": "SC",
+      "destino": "AL",
+      "distancia": 2415
+    },
+    {
+      "origem": "SC",
+      "destino": "AM",
+      "distancia": 2981
+    },
+    {
+      "origem": "SC",
+      "destino": "RN",
+      "distancia": 2802
+    },
+    {
+      "origem": "SC",
+      "destino": "TO",
+      "distancia": 1935
+    },
+    {
+      "origem": "SC",
+      "destino": "RS",
+      "distancia": 376
+    },
+    {
+      "origem": "SC",
+      "destino": "RO",
+      "distancia": 2631
+    },
+    {
+      "origem": "SC",
+      "destino": "PE",
+      "distancia": 2603
+    },
+    {
+      "origem": "SC",
+      "destino": "AC",
+      "distancia": 2865
+    },
+    {
+      "origem": "SC",
+      "destino": "RJ",
+      "distancia": 748
+    },
+    {
+      "origem": "SC",
+      "destino": "BA",
+      "distancia": 1930
+    },
+    {
+      "origem": "SC",
+      "destino": "MA",
+      "distancia": 2685
+    },
+    {
+      "origem": "SC",
+      "destino": "SP",
+      "distancia": 489
+    },
+    {
+      "origem": "SC",
+      "destino": "PI",
+      "distancia": 2428
+    },
+    {
+      "origem": "SC",
+      "destino": "ES",
+      "distancia": 1161
+    },
+    {
+      "origem": "CE",
+      "destino": "GO",
+      "distancia": 1854
+    },
+    {
+      "origem": "CE",
+      "destino": "PB",
+      "distancia": 555
+    },
+    {
+      "origem": "CE",
+      "destino": "AP",
+      "distancia": 1451
+    },
+    {
+      "origem": "CE",
+      "destino": "AL",
+      "distancia": 732
+    },
+    {
+      "origem": "CE",
+      "destino": "AM",
+      "distancia": 2383
+    },
+    {
+      "origem": "CE",
+      "destino": "RN",
+      "distancia": 435
+    },
+    {
+      "origem": "CE",
+      "destino": "TO",
+      "distancia": 1297
+    },
+    {
+      "origem": "CE",
+      "destino": "RS",
+      "distancia": 3193
+    },
+    {
+      "origem": "CE",
+      "destino": "RO",
+      "distancia": 2862
+    },
+    {
+      "origem": "CE",
+      "destino": "PE",
+      "distancia": 629
+    },
+    {
+      "origem": "CE",
+      "destino": "AC",
+      "distancia": 3307
+    },
+    {
+      "origem": "CE",
+      "destino": "RJ",
+      "distancia": 2190
+    },
+    {
+      "origem": "CE",
+      "destino": "BA",
+      "distancia": 1028
+    },
+    {
+      "origem": "CE",
+      "destino": "MA",
+      "distancia": 656
+    },
+    {
+      "origem": "CE",
+      "destino": "SP",
+      "distancia": 2368
+    },
+    {
+      "origem": "CE",
+      "destino": "PI",
+      "distancia": 499
+    },
+    {
+      "origem": "CE",
+      "destino": "ES",
+      "distancia": 1855
+    },
+    {
+      "origem": "GO",
+      "destino": "PB",
+      "distancia": 1889
+    },
+    {
+      "origem": "GO",
+      "destino": "AP",
+      "distancia": 1868
+    },
+    {
+      "origem": "GO",
+      "destino": "AL",
+      "distancia": 1658
+    },
+    {
+      "origem": "GO",
+      "destino": "AM",
+      "distancia": 1924
+    },
+    {
+      "origem": "GO",
+      "destino": "RN",
+      "distancia": 1952
+    },
+    {
+      "origem": "GO",
+      "destino": "TO",
+      "distancia": 724
+    },
+    {
+      "origem": "GO",
+      "destino": "RS",
+      "distancia": 1497
+    },
+    {
+      "origem": "GO",
+      "destino": "RO",
+      "distancia": 1813
+    },
+    {
+      "origem": "GO",
+      "destino": "PE",
+      "distancia": 1829
+    },
+    {
+      "origem": "GO",
+      "destino": "AC",
+      "distancia": 2124
+    },
+    {
+      "origem": "GO",
+      "destino": "RJ",
+      "distancia": 936
+    },
+    {
+      "origem": "GO",
+      "destino": "BA",
+      "distancia": 1225
+    },
+    {
+      "origem": "GO",
+      "destino": "MA",
+      "distancia": 1652
+    },
+    {
+      "origem": "GO",
+      "destino": "SP",
+      "distancia": 810
+    },
+    {
+      "origem": "GO",
+      "destino": "PI",
+      "distancia": 1434
+    },
+    {
+      "origem": "GO",
+      "destino": "ES",
+      "distancia": 1041
+    },
+    {
+      "origem": "PB",
+      "destino": "AP",
+      "distancia": 1966
+    },
+    {
+      "origem": "PB",
+      "destino": "AL",
+      "distancia": 299
+    },
+    {
+      "origem": "PB",
+      "destino": "AM",
+      "distancia": 2829
+    },
+    {
+      "origem": "PB",
+      "destino": "RN",
+      "distancia": 152
+    },
+    {
+      "origem": "PB",
+      "destino": "TO",
+      "distancia": 1519
+    },
+    {
+      "origem": "PB",
+      "destino": "RS",
+      "distancia": 3166
+    },
+    {
+      "origem": "PB",
+      "destino": "RO",
+      "distancia": 3206
+    },
+    {
+      "origem": "PB",
+      "destino": "PE",
+      "distancia": 104
+    },
+    {
+      "origem": "PB",
+      "destino": "AC",
+      "distancia": 3638
+    },
+    {
+      "origem": "PB",
+      "destino": "RJ",
+      "distancia": 1968
+    },
+    {
+      "origem": "PB",
+      "destino": "BA",
+      "distancia": 763
+    },
+    {
+      "origem": "PB",
+      "destino": "MA",
+      "distancia": 1166
+    },
+    {
+      "origem": "PB",
+      "destino": "SP",
+      "distancia": 2216
+    },
+    {
+      "origem": "PB",
+      "destino": "PI",
+      "distancia": 909
+    },
+    {
+      "origem": "PB",
+      "destino": "ES",
+      "distancia": 1581
+    },
+    {
+      "origem": "AP",
+      "destino": "AL",
+      "distancia": 1998
+    },
+    {
+      "origem": "AP",
+      "destino": "AM",
+      "distancia": 1059
+    },
+    {
+      "origem": "AP",
+      "destino": "RN",
+      "distancia": 1876
+    },
+    {
+      "origem": "AP",
+      "destino": "TO",
+      "distancia": 1170
+    },
+    {
+      "origem": "AP",
+      "destino": "RS",
+      "distancia": 3341
+    },
+    {
+      "origem": "AP",
+      "destino": "RO",
+      "distancia": 1725
+    },
+    {
+      "origem": "AP",
+      "destino": "PE",
+      "distancia": 2007
+    },
+    {
+      "origem": "AP",
+      "destino": "AC",
+      "distancia": 2160
+    },
+    {
+      "origem": "AP",
+      "destino": "RJ",
+      "distancia": 2685
+    },
+    {
+      "origem": "AP",
+      "destino": "BA",
+      "distancia": 2001
+    },
+    {
+      "origem": "AP",
+      "destino": "MA",
+      "distancia": 803
+    },
+    {
+      "origem": "AP",
+      "destino": "SP",
+      "distancia": 2664
+    },
+    {
+      "origem": "AP",
+      "destino": "PI",
+      "distancia": 1078
+    },
+    {
+      "origem": "AP",
+      "destino": "ES",
+      "distancia": 2537
+    },
+    {
+      "origem": "AL",
+      "destino": "AM",
+      "distancia": 2785
+    },
+    {
+      "origem": "AL",
+      "destino": "RN",
+      "distancia": 434
+    },
+    {
+      "origem": "AL",
+      "destino": "TO",
+      "distancia": 1382
+    },
+    {
+      "origem": "AL",
+      "destino": "RS",
+      "distancia": 2882
+    },
+    {
+      "origem": "AL",
+      "destino": "RO",
+      "distancia": 3096
+    },
+    {
+      "origem": "AL",
+      "destino": "PE",
+      "distancia": 202
+    },
+    {
+      "origem": "AL",
+      "destino": "AC",
+      "distancia": 3516
+    },
+    {
+      "origem": "AL",
+      "destino": "RJ",
+      "distancia": 1671
+    },
+    {
+      "origem": "AL",
+      "destino": "BA",
+      "distancia": 474
+    },
+    {
+      "origem": "AL",
+      "destino": "MA",
+      "distancia": 1232
+    },
+    {
+      "origem": "AL",
+      "destino": "SP",
+      "distancia": 1928
+    },
+    {
+      "origem": "AL",
+      "destino": "PI",
+      "distancia": 929
+    },
+    {
+      "origem": "AL",
+      "destino": "ES",
+      "distancia": 1174
+    },
+    {
+      "origem": "AM",
+      "destino": "RN",
+      "distancia": 2773
+    },
+    {
+      "origem": "AM",
+      "destino": "TO",
+      "distancia": 1514
+    },
+    {
+      "origem": "AM",
+      "destino": "RS",
+      "distancia": 3132
+    },
+    {
+      "origem": "AM",
+      "destino": "RO",
+      "distancia": 757
+    },
+    {
+      "origem": "AM",
+      "destino": "PE",
+      "distancia": 2843
+    },
+    {
+      "origem": "AM",
+      "destino": "AC",
+      "distancia": 1145
+    },
+    {
+      "origem": "AM",
+      "destino": "RJ",
+      "distancia": 2849
+    },
+    {
+      "origem": "AM",
+      "destino": "BA",
+      "distancia": 2605
+    },
+    {
+      "origem": "AM",
+      "destino": "MA",
+      "distancia": 1752
+    },
+    {
+      "origem": "AM",
+      "destino": "SP",
+      "distancia": 2689
+    },
+    {
+      "origem": "AM",
+      "destino": "PI",
+      "distancia": 1927
+    },
+    {
+      "origem": "AM",
+      "destino": "ES",
+      "distancia": 2866
+    },
+    {
+      "origem": "RN",
+      "destino": "TO",
+      "distancia": 1524
+    },
+    {
+      "origem": "RN",
+      "destino": "RS",
+      "distancia": 3169
+    },
+    {
+      "origem": "RN",
+      "destino": "RO",
+      "distancia": 3184
+    },
+    {
+      "origem": "RN",
+      "destino": "PE",
+      "distancia": 253
+    },
+    {
+      "origem": "RN",
+      "destino": "AC",
+      "distancia": 3621
+    },
+    {
+      "origem": "RN",
+      "destino": "RJ",
+      "distancia": 2085
+    },
+    {
+      "origem": "RN",
+      "destino": "BA",
+      "distancia": 875
+    },
+    {
+      "origem": "RN",
+      "destino": "MA",
+      "distancia": 1073
+    },
+    {
+      "origem": "RN",
+      "destino": "SP",
+      "distancia": 2320
+    },
+    {
+      "origem": "RN",
+      "destino": "PI",
+      "distancia": 846
+    },
+    {
+      "origem": "RN",
+      "destino": "ES",
+      "distancia": 1693
+    },
+    {
+      "origem": "TO",
+      "destino": "RS",
+      "distancia": 2270
+    },
+    {
+      "origem": "TO",
+      "destino": "RO",
+      "distancia": 1717
+    },
+    {
+      "origem": "TO",
+      "destino": "PE",
+      "distancia": 1498
+    },
+    {
+      "origem": "TO",
+      "destino": "AC",
+      "distancia": 2134
+    },
+    {
+      "origem": "TO",
+      "destino": "RJ",
+      "distancia": 1505
+    },
+    {
+      "origem": "TO",
+      "destino": "BA",
+      "distancia": 1114
+    },
+    {
+      "origem": "TO",
+      "destino": "MA",
+      "distancia": 956
+    },
+    {
+      "origem": "TO",
+      "destino": "SP",
+      "distancia": 1493
+    },
+    {
+      "origem": "TO",
+      "destino": "PI",
+      "distancia": 829
+    },
+    {
+      "origem": "TO",
+      "destino": "ES",
+      "distancia": 1411
+    },
+    {
+      "origem": "RS",
+      "destino": "RO",
+      "distancia": 2706
+    },
+    {
+      "origem": "RS",
+      "destino": "PE",
+      "distancia": 2977
+    },
+    {
+      "origem": "RS",
+      "destino": "AC",
+      "distancia": 2814
+    },
+    {
+      "origem": "RS",
+      "destino": "RJ",
+      "distancia": 1123
+    },
+    {
+      "origem": "RS",
+      "destino": "BA",
+      "distancia": 2303
+    },
+    {
+      "origem": "RS",
+      "destino": "MA",
+      "distancia": 2992
+    },
+    {
+      "origem": "RS",
+      "destino": "SP",
+      "distancia": 852
+    },
+    {
+      "origem": "RS",
+      "destino": "PI",
+      "distancia": 2765
+    },
+    {
+      "origem": "RS",
+      "destino": "ES",
+      "distancia": 1536
+    },
+    {
+      "origem": "RO",
+      "destino": "PE",
+      "distancia": 3198
+    },
+    {
+      "origem": "RO",
+      "destino": "AC",
+      "distancia": 449
+    },
+    {
+      "origem": "RO",
+      "destino": "RJ",
+      "distancia": 2707
+    },
+    {
+      "origem": "RO",
+      "destino": "BA",
+      "distancia": 2814
+    },
+    {
+      "origem": "RO",
+      "destino": "MA",
+      "distancia": 2277
+    },
+    {
+      "origem": "RO",
+      "destino": "SP",
+      "distancia": 2463
+    },
+    {
+      "origem": "RO",
+      "destino": "PI",
+      "distancia": 2366
+    },
+    {
+      "origem": "RO",
+      "destino": "ES",
+      "distancia": 2839
+    },
+    {
+      "origem": "PE",
+      "destino": "AC",
+      "distancia": 3626
+    },
+    {
+      "origem": "PE",
+      "destino": "RJ",
+      "distancia": 1874
+    },
+    {
+      "origem": "PE",
+      "destino": "BA",
+      "distancia": 675
+    },
+    {
+      "origem": "PE",
+      "destino": "MA",
+      "distancia": 1211
+    },
+    {
+      "origem": "PE",
+      "destino": "SP",
+      "distancia": 2128
+    },
+    {
+      "origem": "PE",
+      "destino": "PI",
+      "distancia": 937
+    },
+    {
+      "origem": "PE",
+      "destino": "ES",
+      "distancia": 1483
+    },
+    {
+      "origem": "AC",
+      "destino": "RJ",
+      "distancia": 2982
+    },
+    {
+      "origem": "AC",
+      "destino": "BA",
+      "distancia": 3212
+    },
+    {
+      "origem": "AC",
+      "destino": "MA",
+      "distancia": 2726
+    },
+    {
+      "origem": "AC",
+      "destino": "SP",
+      "distancia": 2704
+    },
+    {
+      "origem": "AC",
+      "destino": "PI",
+      "distancia": 2810
+    },
+    {
+      "origem": "AC",
+      "destino": "ES",
+      "distancia": 3160
+    },
+    {
+      "origem": "RJ",
+      "destino": "BA",
+      "distancia": 1209
+    },
+    {
+      "origem": "RJ",
+      "destino": "MA",
+      "distancia": 2265
+    },
+    {
+      "origem": "RJ",
+      "destino": "SP",
+      "distancia": 357
+    },
+    {
+      "origem": "RJ",
+      "destino": "PI",
+      "distancia": 1979
+    },
+    {
+      "origem": "RJ",
+      "destino": "ES",
+      "distancia": 412
+    },
+    {
+      "origem": "BA",
+      "destino": "MA",
+      "distancia": 1319
+    },
+    {
+      "origem": "BA",
+      "destino": "SP",
+      "distancia": 1453
+    },
+    {
+      "origem": "BA",
+      "destino": "PI",
+      "distancia": 991
+    },
+    {
+      "origem": "BA",
+      "destino": "ES",
+      "distancia": 839
+    },
+    {
+      "origem": "MA",
+      "destino": "SP",
+      "distancia": 2348
+    },
+    {
+      "origem": "MA",
+      "destino": "PI",
+      "distancia": 328
+    },
+    {
+      "origem": "MA",
+      "destino": "ES",
+      "distancia": 2015
+    },
+    {
+      "origem": "SP",
+      "destino": "PI",
+      "distancia": 2091
+    },
+    {
+      "origem": "SP",
+      "destino": "ES",
+      "distancia": 741
+    },
+    {
+      "origem": "PI",
+      "destino": "ES",
+      "distancia": 1729
+    }
+  ]
+}

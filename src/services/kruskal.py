@@ -1,3 +1,5 @@
+import json
+
 class Kruskal:
     def __init__(self, vertex, edges):
         self.vertex = vertex
@@ -69,13 +71,3 @@ class Kruskal:
                 } 
             for aresta in self.mst]
         }
-
-        
-
-class AStar:
-    def __init__(self, graph):
-        pass
-
-class GeneticAlgorithm:
-    def __init__(self, graph):
-        pass

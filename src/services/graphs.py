@@ -15,7 +15,7 @@ class GraphService:
         except json.JSONDecodeError:
             print(f"Falha ao decodificar arquivo JSON: {filepath}")
 
-    def create_graph(self):
+    def get_graph(self):
         if not self.data_graph:
             raise ValueError("Grafo não carregado. Por favor, carregue um grafo antes de criar.")
         
@@ -24,6 +24,14 @@ class GraphService:
         edges = self.data_graph["lista_arestas"]
 
         return vertex, edges
+    
+    def get_graph_a_star(self):
+        if not self.data_graph:
+            raise ValueError("Grafo não carregado. Por favor, carregue um grafo antes de criar.")
+        
+        vertex = list(self.data_graph["lista_adjacencias"].keys())
+
+        return vertex
     
     def save(self, data, filename="kruskal_graph.json"):
 
