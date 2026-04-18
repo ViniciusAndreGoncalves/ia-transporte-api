@@ -1,4 +1,5 @@
 from abc import ABC
+import heapq
 
 from services.graphs import GraphService
 
@@ -6,14 +7,10 @@ class AStar(ABC):
     """Implementação do algoritmo A* para encontrar o caminho mais curto 
     entre duas capitais em um grafo."""
     def __init__(self):
-        self.graph = GraphService()
-        self.graph.load()
-        self.vertex, self.edges = self.graph.get_graph()
-        
-        self.graph.load(filepath=f"./src/public/a_star_graph.json")
-        self.heuristic = self.graph.get_graph_a_star()
-        
-        self.cost_road = 5         
+        self.graph = GraphService()   
+        self.vertex, self.edges = self.graph.get_graph("./public/base_graph.json", False)
+        self.heuristic = self.graph.get_graph("./public/a_star_graph.json", True)  
+        self.cost_road = 5    
 
 
     def findpath(self, start, goal):        
@@ -25,43 +22,56 @@ class AStar(ABC):
         result = None
 
         # Econtra a capital no open_set com o menor f_score
-        current = Node(is_road=None, state=start, state_father=None)
-        open_set.append(current)
+        current = Node(is_road=None, state=start, father=None)
+        heapq.heappush(open_set, (current.f_score, current))
         
         while open_set:
             open_set = self._get_neighbors(current, open_set, goal)
-            current = min(open_set, key=lambda node: node.f_score)
+            _, current = heapq.heappop(open_set)            
             if current.state == goal:
                 result = current
                 break
 
-        self.get_path(result)
+        # Retorna uma tupla, lista contendo o caminho percorrido e o resultado da soma das distâncias (g_score)
+        return self.get_path(result), result.g_score
 
 
     def get_path(self, node):
         path = []
 
-        while node is not None:              
-            path.insert(0, node.state)
-            node = node.state_father
+        while node.father is not None:           
+            path.insert(0, (f"{node.father.state} - {node.state} - {"rodovia" if node.is_road else "ferrovia"}"))
+            node = node.father
 
         return path
         
                 
     def _get_neighbors(self, current, open_set, goal):
         """
-        Busca os vizinho do no atual do grafo a ser montado
+        Busca os vizinhos do no atual do grafo a ser montado
         Retorna cada nó e a distância entre o nó atual e o vizinho
         """
-        neighbors = self.vertex.get(current.state, [])
+        neighbors = self.vertex.get(current.state, [])        
 
         # Verifica se o vizinho já foi visitado no caminho atual
-        for neighbor in neighbors:
-            if current.father == None or not self.is_visited(neighbor, current.father):
-                new = Node(is_road=True, state=neighbor, state_father=current, g_score=0, h_score=self.calc_heuristics(current, goal))
-                open_set.append(new)                
+        for state_neighbor in neighbors:
+            if current.father is None or not self.is_visited(state_neighbor, current.father):                
+                new = Node(
+                    is_road=True, 
+                    state=state_neighbor, 
+                    father=current, 
+                    g_score=self.calc_cost(current.g_score, neighbors[state_neighbor]), 
+                    h_score=self.calc_heuristics(current, goal))
+                heapq.heappush(open_set, (new.f_score, new))
 
         return open_set
+    
+    
+    def calc_cost(self, g_score_current, cost_neighbor):
+        """
+        Calcula o custo do caminho percorrido - g_score - g(h)
+        """
+        return cost_neighbor + g_score_current
     
     
     def calc_heuristics(self, current, goal):
@@ -72,7 +82,7 @@ class AStar(ABC):
             ...
         return [MS][SE] = 2155
         """
-        return self.heuristic[current][goal]        
+        return self.heuristic[current.state][goal]        
     
     
     def is_visited(self, neighbor, node):
@@ -80,9 +90,9 @@ class AStar(ABC):
         Verifica se o vizinho já foi visitado no caminho atual
         """
         while node is not None:
-            if neighbor.state == node.state:
+            if neighbor == node.state:
                 return True
-            node = node.state_father
+            node = node.father
         return False
 
 
@@ -98,41 +108,98 @@ class AStar(ABC):
         total_path.reverse()
         return total_path
     
-    def calc_cost(self, distance):
-        raise NotImplementedError("Subclasses devem implementar o método calc_cost")
-    
 
 class Node():
-    def __init__(self, is_road=None, state=None, state_father=None, g_score=None, h_score=None):
+    def __init__(self, is_road=None, state=None, father=None, g_score=0, h_score=0):
         self.is_road = is_road
         self.state = state
-        self.state_father = state_father
+        self.father = father
         self.g_score = g_score
         self.f_score = g_score + h_score
+    
+    def __lt__(self, other):
+        """
+        Método mágico para o heapq funcionar. O heapq utiliza essa função para ordenar os nós.
+        Basicamente ela verifica se o nó atual é o menor que o outro nó (distância - f_score).
+        """
+        return self.f_score < other.f_score
 
 
 class AStarRoad(AStar):
-    def calc_cost(self, distance):
-        return distance * self.cost_road
+    def calc_cost(self, g_score_current, cost_neighbor):
+        """
+        Calcula o custo do caminho percorrido - g_score - g(h)
+        cost_neighbor - custo do atual até o próximo
+        g_score_current - custo total acumulado
+        """
+        return (cost_neighbor * self.cost_road) + g_score_current
     
     
     def calc_heuristics(self, current, goal):
-        return self.heuristic[current][goal] * 5
+        """
+        Essa função retorna a heurística, um dicionário(início) dentro de outro dicionário(destino)
+        "MS": {
+            "SE": 2155,
+            ...
+        return [MS][SE] = 2155
+        """
+        return self.heuristic[current.state][goal] * 5
     
 
 class AStarTrail(AStar):
     def __init__(self):
         super().__init__()
+        self.trail_vertex, self.trail_edges = self.graph.get_graph("./public/kruskal_graph.json", False)
         self.cost_trail = 1.2
 
-    def calc_cost(self, distance):
-        trail = True
+    def _get_neighbors(self, current, open_set, goal):
+        """
+        Busca os vizinhos do no atual do grafo a ser montado
+        Retorna cada nó e a distância entre o nó atual e o vizinho
+        """
+        neighbors = self.vertex.get(current.state, [])        
+        is_road = True
 
-        if trail:
-            return distance * self.cost_trail
+        # Verifica se o vizinho já foi visitado no caminho atual
+        for state_neighbor in neighbors:
+            if current.father is None or not self.is_visited(state_neighbor, current.father):                
+                new = Node(
+                    is_road=is_road, 
+                    state=state_neighbor, 
+                    father=current, 
+                    g_score=self.calc_cost(current, neighbors[state_neighbor], need_transhipment=current.is_road != is_road), 
+                    h_score=self.calc_heuristics(current, goal))
+                heapq.heappush(open_set, (new.f_score, new))
+
+        trail_neighbors = self.trail_vertex.get(current.state, [])
+        is_road=False        
+
+        # Verifica se o vizinho já foi visitado no caminho atual
+        for state_neighbor in trail_neighbors:
+            if current.father is None or not self.is_visited(state_neighbor, current.father):                
+                new = Node(
+                    is_road=is_road, 
+                    state=state_neighbor, 
+                    father=current, 
+                    g_score=self.calc_cost(current, neighbors[state_neighbor], need_transhipment=current.is_road != is_road), 
+                    h_score=self.calc_heuristics(current, goal))
+                heapq.heappush(open_set, (new.f_score, new))
+
+        return open_set
+
+    def calc_cost(self, current, cost_neighbor, need_transhipment):
+        """
+        Calcula o custo do caminho percorrido - g_score - g(h)
+        cost_neighbor - custo do atual até o próximo
+        g_score_current - custo total acumulado
+        """
+        transhipment_cost = 1000 if need_transhipment else 0
+
+        if current.is_road != need_transhipment:
+            return (cost_neighbor * self.cost_road) + current.g_score + transhipment_cost
         else:
-            return distance * self.cost_road
+            return (cost_neighbor * self.cost_trail) + current.g_score + transhipment_cost
         
     
     def calc_heuristics(self, current, goal):
-        return self.heuristic[current][goal] * 1.2
+        return self.heuristic[current.state][goal] * self.cost_trail

@@ -1,34 +1,29 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter
 from use_cases.path_use_cases import PathUseCases
 
+# Classe feita para retornar ao front a resposta(em formato de lista) do caminho escolhido
 
-router = APIRouter()
+router = APIRouter(prefix="/rota", tags=["Caminhos"])
 
 path_use_case = PathUseCases()
 
-@router.get("/rota")
+@router.get("/")
 def get_graph(response):
     start = response.start
     end = response.end
 
-    path = path_use_case.find_path()
+    return path_use_case.find_path(start, end)
 
-    return "Em Desenvolvimento..."
-
-@router.get("/rota/kruskal")
+@router.get("/kruskal")
 def get_graph(response):
     start = response.start
     end = response.end
 
-    path = path_use_case.find_path_kruskal()
+    return path_use_case.find_path_kruskal(start, end)
 
-    return "Em Desenvolvimento..."
-
-@router.get("/rota/genetico")
+@router.get("/genetico")
 def get_graph(response):
     start = response.start
     end = response.end
 
-    path = path_use_case.find_path_genetico()
-
-    return "Em Desenvolvimento..."
+    return path_use_case.find_path_genetico(start, end)

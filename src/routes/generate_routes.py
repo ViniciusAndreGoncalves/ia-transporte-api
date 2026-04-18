@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, FastAPI
+from fastapi import APIRouter, Depends
 
 from src.use_cases.generate_use_cases import GenerateUseCases
 from src.services.graphs import GraphService

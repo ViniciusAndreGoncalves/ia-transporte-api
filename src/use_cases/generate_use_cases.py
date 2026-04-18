@@ -22,3 +22,6 @@ class GenerateUseCases:
         self.graph_service.save(mst)
 
         return mst
+    
+    def generate_genetic():
+        pass
