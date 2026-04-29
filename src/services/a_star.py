@@ -1,15 +1,15 @@
 from abc import ABC
 import heapq
 
-from services.graphs import GraphService
+from src.services.graphs import GraphService
 
 class AStar(ABC):
     """Implementação do algoritmo A* para encontrar o caminho mais curto 
     entre duas capitais em um grafo."""
     def __init__(self):
         self.graph = GraphService()   
-        self.vertex, self.edges = self.graph.get_graph("./public/base_graph.json", False)
-        self.heuristic = self.graph.get_graph("./public/a_star_graph.json", True)  
+        self.vertex, self.edges, _ = self.graph.get_graph("./src/public/base_graph.json", False)
+        self.heuristic = self.graph.get_graph("./src/public/a_star_graph.json", True)  
         self.cost_road = 5    
 
 
@@ -33,13 +33,16 @@ class AStar(ABC):
                 break
 
         # Retorna uma tupla, lista contendo o caminho percorrido e o resultado da soma das distâncias (g_score)
-        return self.get_path(result), result.g_score
+        return {
+            "path": self.get_path(result), 
+            "cost": result.g_score
+            }
 
 
     def get_path(self, node):
         path = []
 
-        while node.father is not None:           
+        while node.father is not None:         
             path.insert(0, (f"{node.father.state} - {node.state} - {"rodovia" if node.is_road else "ferrovia"}"))
             node = node.father
 
@@ -149,7 +152,7 @@ class AStarRoad(AStar):
 class AStarTrail(AStar):
     def __init__(self):
         super().__init__()
-        self.trail_vertex, self.trail_edges = self.graph.get_graph("./public/kruskal_graph.json", False)
+        self.trail_vertex, self.trail_edges, _ = self.graph.get_graph("./src/public/kruskal_graph.json", False)
         self.cost_trail = 1.2
 
     def _get_neighbors(self, current, open_set, goal):

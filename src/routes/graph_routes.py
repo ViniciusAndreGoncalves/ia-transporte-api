@@ -1,25 +1,25 @@
 from fastapi import APIRouter, Depends
-from use_cases.graph_use_cases import GraphUseCase
+from src.use_cases.graph_use_cases import GraphUseCase
 
 
-router = APIRouter()
+router = APIRouter(prefix="/grafo", tags=["Grafos"])
 
 graph_use_case = GraphUseCase()
 
-@router.get("/grafo")
+@router.get("/")
 def get_graph():
-    graph_use_case.get_graph()
+    result = graph_use_case.get_graph()
 
-    return "Em Desenvolvimento..."
+    return result
 
-@router.get("/grafo/kruskal")
-def get_graph():
-    graph_use_case.get_graph_kruskal()
+@router.get("/kruskal")
+def get_graph_kruskal():
+    result = graph_use_case.get_graph_kruskal()
 
-    return "Em Desenvolvimento..."
+    return result
 
-@router.get("/grafo/genetico")
-def get_graph():
+@router.get("/genetico")
+def get_graph_genetico():
     graph_use_case.get_graph_genetico()
     
     return "Em Desenvolvimento..."

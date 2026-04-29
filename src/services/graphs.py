@@ -1,5 +1,6 @@
 import json
 import os
+import csv
 
 class GraphService:
     def __init__(self):
@@ -19,11 +20,26 @@ class GraphService:
         graph_return = self.load(graph_path)        
         if is_heuristics:
             return graph_return["lista_adjacencias"]
-        else: 
+        else:
+            cost = 0 
             vertex = graph_return["lista_adjacencias"]
             edges = graph_return["lista_arestas"]
-            return vertex, edges
+            if "total_cost" in graph_return:
+                cost = graph_return["total_cost"]
+            return vertex, edges, cost
     
+    def get_most_common_rotes(self):
+        commom_rotes = []
+
+        with open("./src/public/most_common_routes.csv", mode='r', encoding='utf-8') as file:
+            reader = csv.reader(file)
+            next(reader)
+
+            for row in reader:
+                commom_rotes.append((row[1], row[2], int(row[3])))
+        
+        return commom_rotes
+
     def save(self, data, filename="kruskal_graph.json"):
 
         filepath = f"./src/public/{filename}"
