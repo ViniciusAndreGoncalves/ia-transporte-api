@@ -29,16 +29,16 @@ class GraphService:
             return vertex, edges, cost
     
     def get_most_common_rotes(self):
-        commom_rotes = []
+        common_rotes = []
 
         with open("./src/public/most_common_routes.csv", mode='r', encoding='utf-8') as file:
             reader = csv.reader(file)
             next(reader)
 
             for row in reader:
-                commom_rotes.append((row[1], row[2], int(row[3])))
+                common_rotes.append((row[1], row[2], int(row[3])))
         
-        return commom_rotes
+        return common_rotes
 
     def save(self, data, filename="kruskal_graph.json"):
 

@@ -29,9 +29,20 @@ class Kruskal:
                 self.mst.append(edge)
                 self.total_cost += cost
 
+        lista_adjacencias = {v: {} for v in self.vertex}
+
+        for edge in self.mst:
+            u = edge['origem']
+            v = edge['destino']
+            cost = edge['distancia']
+
+            lista_adjacencias[u][v] = cost
+            lista_adjacencias[v][u] = cost
+
         return {
-            'minimum_spanning_tree': self.mst,
-            'total_cost': self.total_cost
+            'lista_adjacencias': lista_adjacencias,
+            'lista_arestas': self.mst,
+            'total_cost': self.total_cost * 2000000
         }
 
     def find(self, i):
