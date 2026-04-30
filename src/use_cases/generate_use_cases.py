@@ -1,7 +1,7 @@
-from src.services.kruskal import Kruskal
-from src.services.initalize import graphs
-
+from src.services.genetic import GeneticAlgorithm
 from src.services.graphs import GraphService
+from src.services.kruskal import Kruskal
+
 
 class GenerateUseCases:
     def __init__(self):
@@ -12,16 +12,15 @@ class GenerateUseCases:
         Gera a árvore geradora mínima usando o algoritmo de Kruskal e 
         salva o resultado em um arquivo JSON.
         """
-        self.graph_service.load()        
-        # kruskal = Kruskal(*self.graph_service.create_graph())
-        vertex, edges = self.graph_service.get_graph()
+        vertex, edges, _ = self.graph_service.get_graph("./src/public/base_graph.json", False)
         kruskal = Kruskal(vertex, edges)
         
-        kruskal.run()
-        mst = kruskal.generate()
-        self.graph_service.save(mst)
+        result = kruskal.run()
+        self.graph_service.save(result)
 
-        return mst
+        return result
     
-    def generate_genetic():
-        pass
+    def generate_genetic(self, population_size, mutation_rate, crossover_rate, generations):
+        genetic = GeneticAlgorithm(population_size, mutation_rate, crossover_rate, generations)
+        result = genetic.execute()
+        return result
