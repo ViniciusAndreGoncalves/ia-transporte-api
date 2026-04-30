@@ -1,4 +1,4 @@
-from services.a_star import AStarRoad, AStarTrail
+from src.services.a_star import AStarRoad, AStarTrail
 
 class PathUseCases:
     """
