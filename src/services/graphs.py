@@ -40,7 +40,7 @@ class GraphService:
         
         return common_rotes
 
-    def save(self, data, filename="kruskal_graph.json"):
+    def save(self, data, filename):
 
         filepath = f"./src/public/{filename}"
         os.makedirs(os.path.dirname(filepath), exist_ok=True)

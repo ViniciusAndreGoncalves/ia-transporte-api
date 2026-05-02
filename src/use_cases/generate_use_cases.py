@@ -14,13 +14,16 @@ class GenerateUseCases:
         """
         vertex, edges, _ = self.graph_service.get_graph("./src/public/base_graph.json", False)
         kruskal = Kruskal(vertex, edges)
-        
         result = kruskal.run()
-        self.graph_service.save(result)
+        
+        self.graph_service.save(result, "kruskal_graph.json")
 
         return result
     
     def generate_genetic(self, population_size, mutation_rate, crossover_rate, generations):
         genetic = GeneticAlgorithm(population_size, mutation_rate, crossover_rate, generations)
         result = genetic.execute()
+
+        self.graph_service.save(result, "genetic_graph.json")
+
         return result

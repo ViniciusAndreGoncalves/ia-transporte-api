@@ -98,8 +98,19 @@ class GeneticAlgorithm:
         for i in range(len(fit)):
             print(f"\tInd {i}: {fit[i]}")
 
-    def build_edges(self, vertex):
-        pass
+    def build_edges(self, active_index):
+        lista_arestas = []
+        for i in active_index:
+            estate1, estate2 = self.graph_edges[i]
+            dist = self.graph_dists[i]
+            
+            lista_arestas.append({
+                'origem': estate1,
+                'destino': estate2,
+                'distancia': dist
+            })
+            
+        return lista_arestas
 
     def calc_graph_cost(self, ind):
         active_index = np.where(ind == 1)[0]
@@ -109,7 +120,7 @@ class GeneticAlgorithm:
         graph = {}
         active_index = np.where(ind == 1)[0]
         graph['lista_adjacencias'] = self.build_graph(active_index)
-
+        graph['lista_arestas'] = self.build_edges(active_index)
         graph['total_cost'] = self.calc_graph_cost(ind)
         return graph
 

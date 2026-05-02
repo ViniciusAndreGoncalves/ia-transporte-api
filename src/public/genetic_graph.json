@@ -1,0 +1,146 @@
+{
+    "lista_adjacencias": {
+        "AL": {
+            "PE": 256
+        },
+        "PE": {
+            "AL": 256,
+            "BA": 832,
+            "PB": 116
+        },
+        "AP": {
+            "PA": 529
+        },
+        "PA": {
+            "AP": 529
+        },
+        "BA": {
+            "MG": 1284,
+            "PE": 832,
+            "PI": 1158
+        },
+        "MG": {
+            "BA": 1284,
+            "DF": 734,
+            "SP": 583
+        },
+        "PI": {
+            "BA": 1158,
+            "MA": 436
+        },
+        "CE": {
+            "RN": 524
+        },
+        "RN": {
+            "CE": 524,
+            "PB": 181
+        },
+        "DF": {
+            "GO": 208,
+            "MG": 734
+        },
+        "GO": {
+            "DF": 208
+        },
+        "MA": {
+            "PI": 436
+        },
+        "SP": {
+            "MG": 583,
+            "PR": 416
+        },
+        "MS": {
+            "PR": 979
+        },
+        "PR": {
+            "MS": 979,
+            "SC": 306,
+            "SP": 416
+        },
+        "PB": {
+            "PE": 116,
+            "RN": 181
+        },
+        "SC": {
+            "PR": 306
+        }
+    },
+    "lista_arestas": [
+        {
+            "origem": "AL",
+            "destino": "PE",
+            "distancia": 256
+        },
+        {
+            "origem": "AP",
+            "destino": "PA",
+            "distancia": 529
+        },
+        {
+            "origem": "BA",
+            "destino": "MG",
+            "distancia": 1284
+        },
+        {
+            "origem": "BA",
+            "destino": "PE",
+            "distancia": 832
+        },
+        {
+            "origem": "BA",
+            "destino": "PI",
+            "distancia": 1158
+        },
+        {
+            "origem": "CE",
+            "destino": "RN",
+            "distancia": 524
+        },
+        {
+            "origem": "DF",
+            "destino": "GO",
+            "distancia": 208
+        },
+        {
+            "origem": "DF",
+            "destino": "MG",
+            "distancia": 734
+        },
+        {
+            "origem": "MA",
+            "destino": "PI",
+            "distancia": 436
+        },
+        {
+            "origem": "MG",
+            "destino": "SP",
+            "distancia": 583
+        },
+        {
+            "origem": "MS",
+            "destino": "PR",
+            "distancia": 979
+        },
+        {
+            "origem": "PB",
+            "destino": "PE",
+            "distancia": 116
+        },
+        {
+            "origem": "PB",
+            "destino": "RN",
+            "distancia": 181
+        },
+        {
+            "origem": "PR",
+            "destino": "SC",
+            "distancia": 306
+        },
+        {
+            "origem": "PR",
+            "destino": "SP",
+            "distancia": 416
+        }
+    ],
+    "total_cost": 17084000000
+}
