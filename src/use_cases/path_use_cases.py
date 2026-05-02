@@ -11,7 +11,7 @@ class PathUseCases:
         return AStarRoad().findpath(start, end)
     
     def find_path_kruskal(self, start, end):
-        return AStarTrail().findpath(start, end)
+        return AStarTrail("kruskal").findpath(start, end)
     
     def find_path_genetico(self, start, end):
-        pass
+        return AStarTrail("genetic").findpath(start, end)

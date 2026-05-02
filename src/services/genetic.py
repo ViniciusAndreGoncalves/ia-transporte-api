@@ -17,7 +17,7 @@ class GeneticAlgorithm:
 
         self.maximum_cost = self.graph_service.get_graph("./src/public/kruskal_graph.json", False)[2] * 0.6
 
-        self.astar = AStarTrail()
+        self.astar = AStarTrail("kruskal")
 
         self.fitness_memory = {}
         self.graph_edges, self.graph_dists = self.load_edges()

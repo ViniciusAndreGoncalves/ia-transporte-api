@@ -150,9 +150,13 @@ class AStarRoad(AStar):
     
 
 class AStarTrail(AStar):
-    def __init__(self):
+    def __init__(self, trail_type):
         super().__init__()
-        self.trail_vertex, self.trail_edges, _ = self.graph.get_graph("./src/public/kruskal_graph.json", False)
+        self.trail_graphs = {
+            "kruskal":"./src/public/kruskal_graph.json",
+            "genetic":"./src/public/genetic_graph.json"
+        }
+        self.trail_vertex, self.trail_edges, _ = self.graph.get_graph(self.trail_graphs[trail_type], False)
         self.cost_trail = 1.2
 
     def _get_neighbors(self, current, open_set, goal):
