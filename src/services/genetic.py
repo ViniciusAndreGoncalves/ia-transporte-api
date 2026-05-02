@@ -23,6 +23,7 @@ class GeneticAlgorithm:
         self.graph_edges, self.graph_dists = self.load_edges()
 
         self.common_routes = self.graph_service.get_most_common_rotes()
+        self.loads_sum = sum([item[2] for item in self.common_routes])
 
     def load_edges(self):
         edges = []
@@ -58,9 +59,14 @@ class GeneticAlgorithm:
             self.astar.trail_vertex = self.build_graph(active_index)
             for start, end, loads in self.common_routes:
                 fit += self.astar.findpath(start, end)["cost"] * loads
+            fit /= self.loads_sum
 
             if ind_cost > self.maximum_cost:
-                fit *= 2
+                penalization = ((ind_cost - self.maximum_cost)/(20000 * 51))
+                fit += penalization
+            else:
+                penalization = ((ind_cost - self.maximum_cost)/(2000000 * 51))
+                fit += penalization
 
             self.fitness_memory[ind_key] = fit
             
@@ -101,7 +107,8 @@ class GeneticAlgorithm:
 
     def create_genetic_graph(self, ind):
         graph = {}
-        graph['lista_adjacencias'] = self.build_graph(ind)
+        active_index = np.where(ind == 1)[0]
+        graph['lista_adjacencias'] = self.build_graph(active_index)
 
         graph['total_cost'] = self.calc_graph_cost(ind)
         return graph
@@ -112,6 +119,7 @@ class GeneticAlgorithm:
 
         for generation in range(self.generations):
             fitnesses = []
+
             best_fit = (-1, float("inf"))
             for i, ind in enumerate(population):
                 fit = self.calc_fitness(ind)
@@ -123,7 +131,6 @@ class GeneticAlgorithm:
             best_ind = population[best_fit[0]]
 
             self.show_gen(generation, fitnesses)
-            # print(f"Gen {generation} done!")
             fitnesses = np.array(fitnesses)
 
             nw_gen = [best_ind] # Elitism
