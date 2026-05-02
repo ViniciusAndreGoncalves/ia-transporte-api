@@ -13,10 +13,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/test")
-def run_test():
-    run()
-
 app.include_router(path_routes.router)
 app.include_router(generate_routes.router)
 app.include_router(graph_routes.router)
