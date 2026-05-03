@@ -20,6 +20,6 @@ def get_graph_kruskal():
 
 @router.get("/genetico")
 def get_graph_genetico():
-    graph_use_case.get_graph_genetico()
+    result = graph_use_case.get_graph_genetico()
     
-    return "Em Desenvolvimento..."
+    return result

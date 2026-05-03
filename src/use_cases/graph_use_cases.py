@@ -22,4 +22,10 @@ class GraphUseCase:
         return graph
 
     def get_graph_genetico(self):
-        pass
+        graph = {}
+        vertex, edges, cost = self.graph_service.get_graph("./src/public/genetic_graph.json", False)
+
+        graph["lista_adjacencias"] = vertex
+        graph["lista_arestas"] = edges
+        graph["total_cost"] = cost
+        return graph
