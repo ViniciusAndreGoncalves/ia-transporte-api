@@ -7,7 +7,7 @@ Repositório frontend: *https://github.com/MiguelMartini/Portal_da_Transparencia
 
 ## Instalação
 ````
-clone https://github.com/ViniciusAndreGoncalves/ia-transporte-api.git
+git clone https://github.com/ViniciusAndreGoncalves/ia-transporte-api.git
 cd ia-transporte-api
 python -m pip install requirements.txt
 python -m uvicorn src.main:app --reload 
