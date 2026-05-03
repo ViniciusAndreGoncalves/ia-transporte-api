@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from src.routes import path_routes, generate_routes, graph_routes
 from fastapi.middleware.cors import CORSMiddleware
-from src.test import run
 
 app = FastAPI()
 
