@@ -8,6 +8,7 @@ router = APIRouter(prefix="/gerar", tags=["Geradores"])
 
 @router.get("/kruskal")
 def generate_krukal():
+    """"Run Kruskal algorithm to generate Trail graph"""
     usecase = GenerateUseCases()
     result = usecase.generate_kruskal()
 
@@ -16,6 +17,7 @@ def generate_krukal():
 
 @router.get("/genetico")
 def generate_genetico(population_size:int= 100, mutation_rate:float= 0.08, crossover_rate:float= 0.88, generations:int= 200):
+    """Run Genetic algorithm to generate Trail graph"""
     usecase = GenerateUseCases()
     result = usecase.generate_genetic(population_size, mutation_rate, crossover_rate, generations)
 

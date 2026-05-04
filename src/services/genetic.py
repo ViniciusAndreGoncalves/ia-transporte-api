@@ -15,11 +15,15 @@ class GeneticAlgorithm:
 
         self.graph_service = GraphService()
 
+        # Limit cost of construction
         self.maximum_cost = self.graph_service.get_graph("./src/public/kruskal_graph.json", False)[2] * 0.6
 
         self.astar = AStarTrail("kruskal")
 
+        # Memory to avoid reprocess already generated individuals
         self.fitness_memory = {}
+
+        # Retrieve each relative edge and distance of each individual bit position
         self.graph_edges, self.graph_dists = self.load_edges()
 
         self.common_routes = self.graph_service.get_most_common_rotes()
@@ -35,9 +39,11 @@ class GeneticAlgorithm:
         return edges, dists
 
     def init_population(self):
+        """Generate the population"""
         return np.random.randint(0, 2, size=(self.population_size, self.chromosome_lenght), dtype=np.int8)
 
     def build_graph(self, active_index):
+        """Construct the individual graph"""
         trail_vertex = defaultdict(dict)
         for i in active_index:
             estate1, estate2 = self.graph_edges[i]
@@ -48,6 +54,11 @@ class GeneticAlgorithm:
         return trail_vertex
     
     def calc_fitness(self, individual):
+        """
+            Calc the fitness of the individual
+            Run all common paths to get the cost
+            With the sum of costs retrieve the mean + mean cost of construction per km and number of edges
+        """
         ind_key = tuple(individual)
         if ind_key not in self.fitness_memory:            
             fit = 0
@@ -57,11 +68,13 @@ class GeneticAlgorithm:
             ind_cost = sum([self.graph_dists[i] for i in active_index]) * 2000000
             
             self.astar.trail_vertex = self.build_graph(active_index)
+            # Calc cost of all common paths
             for start, end, loads in self.common_routes:
                 fit += self.astar.findpath(start, end)["cost"] * loads
             fit /= self.loads_sum
 
             if ind_cost > self.maximum_cost:
+                # Add higher penalization if the cost of construction exceed the limit
                 penalization = ((ind_cost - self.maximum_cost)/(20000 * 51))
                 fit += penalization
             else:
@@ -73,6 +86,9 @@ class GeneticAlgorithm:
         return self.fitness_memory[ind_key]
 
     def crossover(self, parent1, parent2):
+        """
+            Make the crossover at a random point 
+        """
         if random.random() < self.crossover_rate:
             cross_point = random.randint(1, self.chromosome_lenght - 1)
             children1 = np.concatenate((parent1[:cross_point], parent2[cross_point:]))
@@ -81,6 +97,11 @@ class GeneticAlgorithm:
         return parent1.copy(), parent2.copy()
 
     def tournament_selection(self, population, fitnesses, n_winners, k= 3):
+        """
+            Run paralel tournaments
+            Retrieve random k individuals
+            Return n_winners best individuals of each tournament
+        """
         competitor_index = np.random.randint(0, len(population), size=(n_winners, k))
         tournament_fitness = fitnesses[competitor_index]
         tour_winners_index = np.argmin(tournament_fitness, axis=1)
@@ -89,6 +110,7 @@ class GeneticAlgorithm:
         return population[winners_index]
 
     def mutation(self, individual):
+        """Iterate over the individual and draw a random number to verify if bit is going to invert"""
         for i in range(len(individual)):
             if random.random() < self.mutation_rate:
                 individual[i] = 1 - individual[i]
@@ -99,6 +121,7 @@ class GeneticAlgorithm:
             print(f"\tInd {i}: {fit[i]}")
 
     def build_edges(self, active_index):
+        """Generate the list of edges"""
         lista_arestas = []
         for i in active_index:
             estate1, estate2 = self.graph_edges[i]
@@ -117,6 +140,7 @@ class GeneticAlgorithm:
         return sum([self.graph_dists[i] for i in active_index]) * 2000000
 
     def create_genetic_graph(self, ind):
+        """Build the final graph to return the best individual"""
         graph = {}
         active_index = np.where(ind == 1)[0]
         graph['lista_adjacencias'] = self.build_graph(active_index)
