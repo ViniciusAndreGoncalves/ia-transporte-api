@@ -1,5 +1,3 @@
-import json
-
 class Kruskal:
     def __init__(self, vertex, edges):
         self.vertex = vertex
@@ -46,6 +44,10 @@ class Kruskal:
         }
 
     def find(self, i):
+        """
+        Função recursiva, que busca o pai do nó 
+        até encontrar a raiz do mesmo expandido.
+        """
         if self.father [i] == i:
             return i
             
@@ -53,6 +55,13 @@ class Kruskal:
         return self.father[i]
 
     def union(self, i, j):
+            """
+            Função responsável por juntar árvores geradas entre a origem e o destino.
+            Ela pega a raiz do componente menor e troca a raiz pelo elemento anterior.
+            Ex:
+            if self.rank[root_i] < self.rank[root_j]:
+                self.father[root_i] = root_j
+            """
             root_i = self.find(i)
             root_j = self.find(j)
 
