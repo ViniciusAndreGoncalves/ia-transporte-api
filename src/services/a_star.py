@@ -27,7 +27,7 @@ class AStar(ABC):
         
         while open_set:
             open_set = self._get_neighbors(current, open_set, goal)
-            _, current = heapq.heappop(open_set)            
+            _, current = heapq.heappop(open_set) 
             if current.state == goal:
                 result = current
                 break
@@ -126,6 +126,9 @@ class Node():
         Basicamente ela verifica se o nó atual é o menor que o outro nó (distância - f_score).
         """
         return self.f_score < other.f_score
+    
+    def __str__(self):
+        return f"State:{self.state}| g_score:{self.g_score}| f_score:{self.f_score}| is_road:{self.is_road}|father:{"None " if not self.father else self.father.state}"
 
 
 class AStarRoad(AStar):
@@ -166,7 +169,7 @@ class AStarTrail(AStar):
         """
         neighbors = self.vertex.get(current.state, [])        
         is_road = True
-
+        
         # Verifica se o vizinho já foi visitado no caminho atual
         for state_neighbor in neighbors:
             if current.father is None or not self.is_visited(state_neighbor, current.father):                
@@ -174,8 +177,14 @@ class AStarTrail(AStar):
                     is_road=is_road, 
                     state=state_neighbor, 
                     father=current, 
-                    g_score=self.calc_cost(current, neighbors[state_neighbor], need_transhipment=current.is_road != is_road), 
-                    h_score=self.calc_heuristics(current, goal))
+                    g_score=self.calc_cost(
+                        current, 
+                        is_road, 
+                        neighbors[state_neighbor], 
+                        need_transhipment= False if current.is_road is None else current.is_road != is_road
+                    ), 
+                    h_score=self.calc_heuristics(state_neighbor, goal)
+                )
                 heapq.heappush(open_set, (new.f_score, new))
 
         trail_neighbors = self.trail_vertex.get(current.state, [])
@@ -188,25 +197,30 @@ class AStarTrail(AStar):
                     is_road=is_road, 
                     state=state_neighbor, 
                     father=current, 
-                    g_score=self.calc_cost(current, neighbors[state_neighbor], need_transhipment=current.is_road != is_road), 
-                    h_score=self.calc_heuristics(current, goal))
+                    g_score=self.calc_cost(
+                        current, 
+                        is_road, 
+                        neighbors[state_neighbor], 
+                        need_transhipment= False if current.is_road is None else current.is_road != is_road
+                    ), 
+                    h_score=self.calc_heuristics(state_neighbor, goal)
+                )
                 heapq.heappush(open_set, (new.f_score, new))
 
         return open_set
 
-    def calc_cost(self, current, cost_neighbor, need_transhipment):
+    def calc_cost(self, current, is_road, cost_neighbor, need_transhipment):
         """
         Calcula o custo do caminho percorrido - g_score - g(h)
         cost_neighbor - custo do atual até o próximo
         g_score_current - custo total acumulado
         """
         transhipment_cost = 1000 if need_transhipment else 0
-
-        if current.is_road != need_transhipment:
+        
+        if is_road != need_transhipment:
             return (cost_neighbor * self.cost_road) + current.g_score + transhipment_cost
         else:
             return (cost_neighbor * self.cost_trail) + current.g_score + transhipment_cost
         
-    
     def calc_heuristics(self, current, goal):
-        return self.heuristic[current.state][goal] * self.cost_trail
+        return self.heuristic[current][goal] * self.cost_trail
