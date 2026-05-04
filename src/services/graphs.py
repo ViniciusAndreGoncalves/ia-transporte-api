@@ -3,6 +3,7 @@ import os
 import csv
 
 class GraphService:
+    """Classe responsável pela montagem dos grafos."""
     def __init__(self):
         pass        
 

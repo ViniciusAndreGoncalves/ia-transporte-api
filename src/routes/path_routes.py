@@ -7,6 +7,11 @@ router = APIRouter(prefix="/rota", tags=["Caminhos"])
 
 path_use_case = PathUseCases()
 
+"""
+Todas as rotas abaixo são responsáveis por retornarem 
+o caminho mais curto e seu respectivo custo.
+"""
+
 @router.get("/")
 def get_path(start:str, end:str):
 

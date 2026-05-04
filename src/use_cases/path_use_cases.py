@@ -2,7 +2,8 @@ from src.services.a_star import AStarRoad, AStarTrail
 
 class PathUseCases:
     """
-    Recebe a requisição do front com início e o destino e retorna a lista com o caminho. API - Serviço
+    Recebe a requisição do front com início e o destino
+    e retorna a lista com o caminho. API - Serviço
     """
     def __init__(self):
         pass
