@@ -217,7 +217,7 @@ class AStarTrail(AStar):
         """
         transhipment_cost = 1000 if need_transhipment else 0
         
-        if is_road != need_transhipment:
+        if is_road:
             return (cost_neighbor * self.cost_road) + current.g_score + transhipment_cost
         else:
             return (cost_neighbor * self.cost_trail) + current.g_score + transhipment_cost
