@@ -64,7 +64,7 @@ class AStar(ABC):
                     state=state_neighbor, 
                     father=current, 
                     g_score=self.calc_cost(current.g_score, neighbors[state_neighbor]), 
-                    h_score=self.calc_heuristics(current, goal))
+                    h_score=self.calc_heuristics(state_neighbor, goal))
                 heapq.heappush(open_set, (new.f_score, new))
 
         return open_set
@@ -85,7 +85,7 @@ class AStar(ABC):
             ...
         return [MS][SE] = 2155
         """
-        return self.heuristic[current.state][goal]        
+        return self.heuristic[current][goal]        
     
     
     def is_visited(self, neighbor, node):
@@ -149,7 +149,7 @@ class AStarRoad(AStar):
             ...
         return [MS][SE] = 2155
         """
-        return self.heuristic[current.state][goal] * 5
+        return self.heuristic[current][goal] * 5
     
 
 class AStarTrail(AStar):
