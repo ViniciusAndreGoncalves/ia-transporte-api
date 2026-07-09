@@ -1,6 +1,8 @@
 # Projeto
 O Projeto "*ia-transporte-api*" é de cunho educacional e visa a aplicação de conceitos estudados durante a disciplina de Inteligência Artificial.
 Repositório frontend: *https://github.com/MiguelMartini/Portal_da_Transparencia*
+![View](./src/public/descricao.png)
+
 ## Tecnologias
 - Back-End: FastAPI.
 - Bibliotecas: Numpy (Arrays e computação numérica) e Uvicorn (Servidor ASGI)
